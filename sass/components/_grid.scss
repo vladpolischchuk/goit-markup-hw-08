@@ -1,0 +1,17 @@
+// Сітка для карток
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: $negative-card-indent;
+    margin-right: $negative-card-indent;
+    margin-bottom: $negative-card-indent;
+    margin-left: $negative-card-indent;
+}
+
+.grid__item {
+    margin-top: $positive-card-indent;
+    margin-right: $positive-card-indent;
+    margin-bottom: $positive-card-indent;
+    margin-left: $positive-card-indent;
+}

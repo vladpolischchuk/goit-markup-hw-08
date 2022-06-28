@@ -1,0 +1,23 @@
+// анімація пульсуючої книпки
+@keyframes puls {
+    to {
+        transform: scale(2);
+        background-color: white;
+        opacity: 0;
+    }
+}
+
+// анміація бліку на кнопці
+@keyframes move-light {
+    0% {
+        transform: translateX(-3em) skewX(-45deg);
+    }
+
+    50% {
+        transform: translateX(15em) skewX(-45deg);
+    }
+
+    100% {
+        transform: translateX(15em) skewX(-45deg);
+    }
+}

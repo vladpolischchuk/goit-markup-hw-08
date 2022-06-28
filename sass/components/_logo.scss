@@ -1,0 +1,20 @@
+// Логотип сайту
+.logo {
+    color: getColor('accent');
+
+    font-family: $logo-font;
+    font-weight: $bold-weight;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    // На світлому фоні
+    &__dark {
+        color: getColor('logo');
+    }
+
+    // На темному фоні
+    &__white {
+        color: getColor('white');
+    }
+}

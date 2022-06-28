@@ -1,0 +1,47 @@
+// Модальне вікно
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    min-width: 528px;
+    border-radius: 4px;
+
+    background-color: getColor('white');
+
+    box-shadow: getColor('shadows-one'),
+                getColor('shadows-two'),
+                getColor('shadows-three');
+
+    transition: transform $time-animation $time-function;
+}
+
+// Кнопка виходу з модального вікна
+.modal__btn-exit {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: getColor('white');
+    cursor: pointer;
+
+    box-shadow: getColor('shadows-one'),
+                getColor('shadows-two'),
+                getColor('shadows-three');
+
+    transition: fill $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &focus {
+        fill: getColor('accent');
+    }
+}

@@ -1,0 +1,10 @@
+// Стилі для заголовків секцій
+.section__title {
+    @include margin-Title($zeroing-indent, 50px);
+    @extend %title;
+
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}

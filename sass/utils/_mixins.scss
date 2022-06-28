@@ -1,0 +1,44 @@
+// Падінги та фон для секцій
+@mixin padding-bg-Section($t-px, $b-px, $bg-color) {
+    padding-top: $t-px;
+    padding-bottom: $b-px;
+
+    background-color: $bg-color;
+}
+
+// Стилі ссилок для контактів
+@mixin contact-Link($px, $color) {
+    padding-top: $px;
+    padding-bottom: $px;
+
+    color: $color;
+
+    font-weight: $medium-weight;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+    }
+}
+
+//Відступи для всіх заголовків
+@mixin margin-Title($t-px, $b-px) {
+    margin-top: $t-px;
+    margin-bottom: $b-px;
+}
+
+// Колір для підзаголовків
+@mixin color-Subtitle($color) {
+    color: $color;
+}
+
+// Вирахунок розмірів елментів для сітки
+@mixin size-Cards($number) {
+    flex-basis: calc((100% - (30px * $number)) / $number);
+}

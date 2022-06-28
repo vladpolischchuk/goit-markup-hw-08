@@ -1,0 +1,20 @@
+.page-body {
+    font-family: $main-font;
+    color: getColor('primary');
+}
+
+.list {
+    margin-top: $zeroing-indent;
+    margin-bottom: $zeroing-indent;
+    padding-left: $zeroing-indent;
+
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.img {
+    display: block;
+}

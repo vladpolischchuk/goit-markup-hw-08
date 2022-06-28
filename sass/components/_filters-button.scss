@@ -1,0 +1,68 @@
+// Спиоск кнопок-фільтрів для портфоліо
+.filters {
+    display: flex;
+    justify-content: center;
+}
+
+.filters__item:nth-child(n+2) {
+    margin-left: 8px;
+}
+
+// Кнопоки-фільтри для портфоліо
+.filters__btn {
+    position: relative;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: getColor('light-bg-cl');
+    color: getColor('title');
+
+    font-family: inherit;
+    font-weight: $medium-weight;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    overflow: hidden;
+
+    transition: color $time-animation $time-function,
+                background-color $time-animation $time-function,
+                box-shadow $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        color: getColor('white');
+        background-color: getColor('accent');
+
+        cursor: pointer;
+
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+                    0 1px 2px rgba(0, 0, 0, 0.08),
+                    getColor('shadows-three');
+    }
+
+    // Активна кнопка
+    &--active {
+        color: getColor('white');
+        background-color: getColor('accent');
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+                    0 1px 2px rgba(0, 0, 0, 0.08),
+                    getColor('shadows-three');
+    }
+}
+
+// Анімація
+.pulse {
+    position: absolute;
+    background-color: getColor('accent');
+    border-radius: 50%;
+    transform: scale(0);
+    animation: puls 0.7s ease-out;
+}

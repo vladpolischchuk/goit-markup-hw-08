@@ -1,0 +1,90 @@
+// Картка продукту в секці портфоліо
+.product__item {
+    @include size-Cards($number-cards);
+}
+
+.product__link {
+    display: block;
+
+    transition: box-shadow $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &focus {
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+                    0 4px 4px rgba(0, 0, 0, 0.06),
+                    getColor('shadows-three');
+
+        outline: none;
+    }
+}
+
+.product__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+// Оверлей карточки
+.product__group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 63px;
+
+    background-color: getColor('accent');
+    opacity: 0.9;
+
+    transition: transform $time-animation $time-function;
+
+    // Ховер та фокус
+    .product__link:hover & {
+        transform: translateY(0);
+    }
+}
+
+// Опис карточки
+.product__description {
+    margin: $zeroing-indent;
+
+    color: getColor('white');
+
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+}
+
+// Шапка карточки
+.product__header {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+    border-right: 1px solid getColor('border-card-cl');
+    border-bottom: 1px solid getColor('border-card-cl');
+    border-left: 1px solid getColor('border-card-cl');
+
+    color: getColor('primary');
+}
+
+// Заголовок та підзаголовок
+.product__title {
+    @include margin-Title(0px, 4px);
+    @extend %title;
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.product__subtitle {
+    @include margin-Title($zeroing-indent, $zeroing-indent);
+
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}

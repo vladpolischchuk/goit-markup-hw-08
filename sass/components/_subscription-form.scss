@@ -1,0 +1,44 @@
+// Форма піписки на розсилку
+.page-footer__subscription {
+    margin-left: auto;
+}
+
+.subscription__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    width: 358px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    color: getColor('contact');
+    background-color: transparent;
+
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    transition: border-color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        border-color: getColor('accent');
+        outline: none;
+    }
+}
+
+// Кнопка для відправки форми
+.subscription__btn {
+    display: inline-flex;
+    margin-left: 12px;
+}
+
+// Іконка кнопки
+.subscription__icon {
+    margin-top: 3px;
+    margin-left: 10px;
+
+    fill: currentColor;
+}

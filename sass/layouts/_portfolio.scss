@@ -1,0 +1,8 @@
+.portfolio {
+    @include padding-bg-Section($section-padding, $section-padding, transparent);
+
+    // Відступи між елементами секції
+    &__filters {
+        margin-bottom: 50px;
+    }
+}

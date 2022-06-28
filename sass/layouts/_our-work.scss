@@ -1,0 +1,31 @@
+// Розділ "Ми робимо"
+.our-work {
+    @include padding-bg-Section($zeroing-indent, $section-padding, transparent)
+}
+
+// Список того що ми робимо
+.our-work__item {
+    position: relative;
+    @include size-Cards($number-work);
+}
+
+// Опис того що ми робимо
+.our-work__thumb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+}
+
+.our-work__subtitle {
+    @include color-Subtitle(getColor('white'));
+    @include margin-Title($zeroing-indent, $zeroing-indent);
+    @extend %subtitle;
+}

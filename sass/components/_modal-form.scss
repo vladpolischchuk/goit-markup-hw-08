@@ -1,0 +1,163 @@
+// Форма модального вікна(замовлення послуги)
+.form {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+// Заголовок форми
+.form__title {
+    @include margin-Title(0px, 12px);
+    @extend %title;
+
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+// Дані замовника
+.form__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    // 
+    &:nth-child(n+2) {
+        margin-top: 10px;
+    }
+}
+
+.form__input {
+    margin-top: 4px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+
+    width: 100%;
+
+    border: 1px solid getColor('border-input-cl');
+    border-radius: 4px;
+
+    background-color: transparent;
+    color: getColor('title');
+
+    transition: border-color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        border-color: getColor('accent');
+        outline: none;
+    }
+}
+
+// Іконка для інпутів
+.form__icon {
+    position: absolute;
+    top: 27px;
+    left: 11px;
+
+    transition: fill $time-animation $time-function;
+
+    // Ховер та фокус
+    .form__input:hover + &,
+    .form__input:focus + & {
+        fill: getColor('accent');
+    }
+}
+
+// Коментар, побажання замвоника
+.form__coment {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+
+    width: 100%;
+
+    border: 1px solid getColor('border-input-cl');
+    border-radius: 4px;
+
+    background-color: transparent;
+    color: getColor('title');
+
+    resize: none;
+    transition: border-color $time-animation $time-function;
+
+    // Колір плейсхолдера
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        border-color: getColor('accent');
+        outline: none;
+    }
+}
+
+// Політика приватності(чекбокс)
+.checkbox-group {
+    text-align: center;
+    padding-left: 12px;
+}
+
+.checkbox__label {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+// Іконка чекбокса
+.checkbox__icon {
+    display: inline-block;
+    margin-right: 7px;
+
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid getColor('title');
+    border-radius: 3px;
+
+    transition: border-color $time-animation $time-function,
+        background-color $time-animation $time-function,
+        background-image $time-animation $time-function;
+
+    // Зачеканий чекбокс
+    .checkbox__input:checked + & {
+        border-color: getColor('accent');
+        background-color: getColor('accent');
+        background-image: url(../images/sprits/modal-window/icon-check.svg);
+        background-size: contain;
+        background-origin: border-box;
+    }
+}
+
+.checkbox__link {
+    margin-left: 5px;
+
+    color: getColor('accent');
+    text-decoration: underline;
+
+    transition: color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        color: getColor('btn-hover-cl');
+    }
+}

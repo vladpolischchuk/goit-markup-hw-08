@@ -1,0 +1,48 @@
+// Стилі для соціальних мереж
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social__item:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.social__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    color: getColor('icon-bg-cl');
+
+    transition: background-color $time-animation $time-function,
+                color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        background-color: getColor('accent');
+        color: getColor('white');
+        
+        outline: none;
+    }
+
+    // на темному фоні
+    &--dark {
+        color: getColor('white');
+        background-color: getColor('dark-bg-cl');
+    }
+}
+
+// Іконки соціальних мереж
+.social__icon {
+    max-width: 20px;
+    max-height: 20px;
+
+    fill: currentColor;
+}

@@ -1,0 +1,90 @@
+// Шапка сайту
+.page-header {
+    // Ставлю елементи в рядок
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    // Лінія під хеадером
+    &--border {
+        border-bottom: 1px solid #ECECEC;
+    }
+}
+
+// Навігація по сайту
+.page-header__nav {
+    margin-left: 93px;
+    margin-right: auto;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item:nth-child(n+2) {
+    margin-left: 50px;
+}
+
+.nav__link {
+    position: relative;
+    display: inline-block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: getColor('title');
+
+    font-weight: $medium-weight;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $time-animation $time-function;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+    }
+
+    // Активна ссилка
+    &--active {
+    color: getColor('accent');
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+
+        border-radius: 2px;
+
+        width: 100%;
+        height: 4px;
+
+        background-color: getColor('accent');
+    }
+}
+}
+
+// Контакти сайту
+.header-contacts {
+    display: flex;
+}
+
+.header-contacts__item:nth-child(n+2) {
+    margin-left: 30px;
+}
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+
+    @include contact-Link(32px, getColor('primary'));
+}
+
+.header-contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
