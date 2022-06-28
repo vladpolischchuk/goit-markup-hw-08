@@ -27,14 +27,16 @@
 // Оверлей карточки
 .product__group {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
+    
     transform: translateY(100%);
+    padding-top: 62px;
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-bottom: 62px;
 
-    padding-top: 60px;
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-bottom: 60px;
+    width: 100%;
 
     background-color: getColor('accent');
     opacity: 0.9;
@@ -42,7 +44,8 @@
     transition: transform $time-animation $time-function;
 
     // Ховер та фокус
-    .product__link:hover & {
+    .product__link:hover &,
+    .product__link:focus & {
         transform: translateY(0);
     }
 }
@@ -51,10 +54,11 @@
 .product__description {
     margin: $zeroing-indent;
 
+    width: 322px;
     color: getColor('white');
 
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.6;
     letter-spacing: 0.03em;
 }
 

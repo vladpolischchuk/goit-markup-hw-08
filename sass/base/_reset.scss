@@ -1,6 +1,10 @@
 .page-body {
     font-family: $main-font;
     color: getColor('primary');
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 
 .list {
@@ -17,4 +21,6 @@
 
 .img {
     display: block;
+    width: 100%;
+    height: auto;
 }

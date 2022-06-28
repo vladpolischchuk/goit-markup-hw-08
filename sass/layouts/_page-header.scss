@@ -41,7 +41,8 @@
 
     border: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
         fill: getColor('accent');
     }
 }

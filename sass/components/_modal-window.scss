@@ -1,11 +1,7 @@
 // Модальне вікно
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    position: relative;
 
-    min-width: 528px;
     border-radius: 4px;
 
     background-color: getColor('white');
@@ -15,6 +11,16 @@
                 getColor('shadows-three');
 
     transition: transform $time-animation $time-function;
+
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 450px;
+
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 // Кнопка виходу з модального вікна

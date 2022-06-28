@@ -295,6 +295,9 @@ summary {
   font-family: "Roboto", sans-serif;
   color: #757575;
 }
+.page-body.modal-open {
+  overflow: hidden;
+}
 
 .list {
   margin-top: 0px;
@@ -309,6 +312,8 @@ summary {
 
 .img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -316,7 +321,7 @@ summary {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
+  max-width: 480px;
 }
 
 @-webkit-keyframes puls {
@@ -623,14 +628,15 @@ summary {
 
 .product__group {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  padding-top: 60px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 60px;
+  padding-top: 62px;
+  padding-right: 64px;
+  padding-left: 64px;
+  padding-bottom: 62px;
+  width: 100%;
   background-color: #2196F3;
   opacity: 0.9;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -638,16 +644,17 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.product__link:hover .product__group {
+.product__link:hover .product__group, .product__link:focus .product__group {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
 .product__description {
   margin: 0px;
+  width: 322px;
   color: #FFFFFF;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.6;
   letter-spacing: 0.03em;
 }
 
@@ -678,12 +685,7 @@ summary {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
+  position: relative;
   border-radius: 4px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -692,6 +694,16 @@ summary {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal__btn-exit {
@@ -813,7 +825,6 @@ summary {
 
 .checkbox-group {
   text-align: center;
-  padding-left: 12px;
 }
 
 .checkbox__label {
@@ -824,8 +835,8 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
@@ -899,7 +910,7 @@ summary {
   background-color: transparent;
   border: none;
 }
-.nav-button:hover {
+.nav-button:hover, .nav-button:focus {
   fill: #2196F3;
 }
 
@@ -1300,9 +1311,15 @@ summary {
   position: fixed;
   top: 0;
   height: 0;
+  z-index: 4;
+  padding-top: 93px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 93;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
