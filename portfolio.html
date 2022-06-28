@@ -21,7 +21,7 @@
 <body class="page-body">
 
     <!-- Шапка сайту -->
-    <header class="page-header page-header--border">
+    <header class="page-header">
         <div class="container page-header__container">
 
             <!-- Логотип сайту -->
@@ -29,44 +29,68 @@
 
             <!-- Навігація по сайту -->
             <nav class="nav page-header__nav">
-                <ul class="nav__list list">
-                    <li class="nav__item">
-                        <a class="nav__link link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link nav__link--active  link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link link" href="">Контакты</a>
-                    </li>
-                </ul>
+
+                <!-- Елементи навігації -->
+                <div class="nav__thumb" data-menu>
+
+                    <ul class="nav__list list">
+                        <li class="nav__item">
+                            <a class="nav__link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--active link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <!-- Контакти сайту -->
+                    <ul class="header-contacts list">
+
+                        <li class="header-contacts__item">
+                            <a class="header-contacts__phone link" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+
+                        <li class="header-contacts__item">
+                            <a class="header-contacts__email link" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Соц-мережі сайту -->
+                    <ul class="header-networks list">
+                        <li class="header-networks__item">
+                            <a class="header-networks__link link link--margin-not" href="">Instagram</a>
+                        </li>
+                        <li class="header-networks__item">
+                            <a class="header-networks__link link" href="">Twitter</a>
+                        </li>
+                        <li class="header-networks__item">
+                            <a class="header-networks__link link" href="">Facebook</a>
+                        </li>
+                        <li class="header-networks__item">
+                            <a class="header-networks__link link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Гамбургер -->
+                <button class="nav-button" type="button" data-menu-button aria-expanded="false">
+                    <svg width="24" height="19">
+                        <use class="icon-cross" href="./images/sprits/menu/gamburger.svg#icon-close"></use>
+                        <use class="icon-menu" href="./images/sprits/menu/gamburger.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </nav>
-
-            <!-- Контакти сайту -->
-            <ul class="header-contacts list">
-
-                <li class="header-contacts__item">
-                    <a class="header-contacts__link link" href="mailto:info@devstudio.com">
-                        <svg class="header-contacts__icon" width="16" height="12">
-                            <use href="./images/sprits/sprite.svg#mail"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-
-                <li class="header-contacts__item">
-                    <a class="header-contacts__link link" href="tel:+380961111111">
-                        <svg class="header-contacts__icon" width="10" height="16">
-                            <use href="./images/sprits/sprite.svg#phone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-
-            </ul>
 
         </div>
     </header>
+
 
 
     <!-- Унікальний вміст сторінки -->
@@ -92,8 +116,8 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="">
                             <div class="product__thumb">
-                                <img class="img" src="./images/portfolio/technoquack.jpg" alt="Веб-сайт: Технокряк"
-                                    width="370" height="293">
+                                <img class="img" src="./images/portfolio/mobile/technoquack-450.jpg"
+                                    alt="Веб-сайт: Технокряк" width="450" height="294">
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -410,6 +434,7 @@
     </footer>
 
     <!-- Скрипти -->
+    <script src="./js/menu.js"></script>
     <script src="./js/pulse-btn.js"></script>
 </body>
 

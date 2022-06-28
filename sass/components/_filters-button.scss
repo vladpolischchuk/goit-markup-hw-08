@@ -1,16 +1,25 @@
 // Спиоск кнопок-фільтрів для портфоліо
 .filters {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-right: -4px;
+    margin-top: -7.5px;
+    margin-left: -4px;
+    margin-bottom: -7.5px;
 }
 
-.filters__item:nth-child(n+2) {
-    margin-left: 8px;
+.filters__item {
+    margin-right: 4px;
+    margin-top: 7.5px;
+    margin-left: 4px;
+    margin-bottom: 7.5px;
 }
 
 // Кнопоки-фільтри для портфоліо
 .filters__btn {
     position: relative;
+
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;

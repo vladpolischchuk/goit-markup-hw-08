@@ -1,11 +1,11 @@
 // Розділ постійні клієнти
 .clients {
-    @include padding-bg-Section($section-padding, $section-padding, transparent);
+    @include padding-bg-Section($section-padding-tel, $section-padding-tel, transparent);
 }
 
 // Список клієнтів
 .clients__item {
-    @include size-Cards($number-clients);
+    @include size-Cards($number-clients-tel);
     height: 92px;
 }
 
@@ -23,14 +23,14 @@
     color: getColor('icon-bg-cl');
 
     transition: border-color $time-animation $time-function,
-                color $time-animation $time-function;
+        color $time-animation $time-function;
 
     // Ховер та фокус
     &:hover,
     &:focus {
         color: getColor('accent');
         border-color: getColor('accent');
-        
+
         outline: none;
     }
 }

@@ -1,6 +1,6 @@
 // Форма піписки на розсилку
 .page-footer__subscription {
-    margin-left: auto;
+    margin-top: 60px;
 }
 
 .subscription__input {
@@ -8,7 +8,7 @@
     padding-bottom: 15px;
     padding-left: 16px;
 
-    width: 358px;
+    width: 100%;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -32,7 +32,7 @@
 // Кнопка для відправки форми
 .subscription__btn {
     display: inline-flex;
-    margin-left: 12px;
+    margin-top: 20px;
 }
 
 // Іконка кнопки

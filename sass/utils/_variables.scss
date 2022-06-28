@@ -39,17 +39,36 @@ $colors: (
 
 // Відступи
 $zeroing-indent: 0px;
-$section-padding: 94px;
 $negative-card-indent: -15px;
 $positive-card-indent: 15px;
+    // для секцій
+    $section-padding-tel: 60px;
+    $section-padding-tb: 94px;
+    $section-padding-pc: 94px;
 
 // Анімація: час та функція
 $time-animation: 250ms;
 $time-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-// Інше
-$number-cards: 3;
-$number-features: 4;
-$number-work: 3;
-$number-team: 4;
-$number-clients: 6;
+// Кількість карточок для сітки
+    // особливості
+    $number-features-tel: 1;
+    $number-features-tb: 2;
+    $number-features-pc: 4;
+
+    // команда
+    $number-team-tel: 1;
+    $number-team-tb: 2;
+    $number-team-pc: 4;
+
+    // клієнти
+    $number-clients-tel: 2;
+    $number-clients: 6;
+
+    // портфоліо
+    $number-cards-tel: 1;
+    $number-cards-pc: 3;
+
+    // ми робимо
+    $number-work: 3;
+

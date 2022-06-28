@@ -2,11 +2,13 @@
 .page-footer {
     @include padding-bg-Section(60px, 60px, getColor('main-bg-cl'));
 
-    // Ставлю елементи в рядок
     &__container {
-        display: flex;
-        align-items: center;
+        text-align: center;
     }
+}
+
+.page-footer__contacts {
+    margin-top: 20px;
 }
 
 // Адреса сайту
@@ -28,11 +30,6 @@
 }
 
 // Контакти сайту
-.page-footer__contacts {
-    margin-top: 20px;
-    margin-right: 70px;
-}
-
 .footer-contacts__item {
     margin-top: 9px;
 }
@@ -48,4 +45,9 @@
     @include margin-Title(0px, 20px);
     @include color-Subtitle(getColor('white'));
     @extend %subtitle;
+}
+
+// Соціальні мережі студії
+.page-footer__social-networks {
+    margin-top: 60px;
 }

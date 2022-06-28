@@ -1,18 +1,18 @@
 // Розділ "Наша команда"
 .team {
-    @include padding-bg-Section($section-padding, $section-padding, getColor('light-bg-cl'));
+    @include padding-bg-Section($section-padding-tel, $section-padding-tel, getColor('light-bg-cl'));
 }
 
 // Список нашої команди
-.team__item {  
-    @include size-Cards($number-team);
-    
+.team__item {
+    @include size-Cards($number-team-tel);
+
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 
     box-shadow: getColor('shadows-one'),
-                getColor('shadows-two'),
-                getColor('shadows-three');
+        getColor('shadows-two'),
+        getColor('shadows-three');
 }
 
 // Опис члена команди
@@ -43,7 +43,7 @@
 
 .team__description {
     @include margin-Title($zeroing-indent, 16px);
-    
+
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;

@@ -1,6 +1,7 @@
 // Розділ "Ми робимо"
 .our-work {
-    @include padding-bg-Section($zeroing-indent, $section-padding, transparent)
+    display: none;
+    @include padding-bg-Section($zeroing-indent, $section-padding-pc, transparent)
 }
 
 // Список того що ми робимо

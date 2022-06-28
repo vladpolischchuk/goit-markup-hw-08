@@ -1,14 +1,74 @@
 // Розділ Герой
 .hero {
     @include padding-bg-Section(200px, 200px, getColor('main-bg-cl'));
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-background.jpg);
+    
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 
     text-align: center;
+
+    // Медіа запроси
+    @media screen and (max-width: 576px) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-480.jpg);
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 960px) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-768.jpg);
+    }
+
+    @media screen and (min-width: 961px) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-1600.jpg);
+    }
+}
+
+// Фонове зображення для retina-екранів
+@media screen and (max-width: 576px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero-480-2x.jpg);
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero-768-2x.jpg);
+        }
+    }
+}
+
+@media screen and (min-width: 961px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../images/hero/hero-1600-2x.jpg);
+        }
+    }
 }
 
 // Заголовок
