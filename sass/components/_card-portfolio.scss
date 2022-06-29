@@ -1,6 +1,11 @@
 // Картка продукту в секці портфоліо
 .product__item {
     @include size-Cards($number-cards-tel);
+
+    // для планшету
+    @media screen and (min-width: 768px) {
+        @include size-Cards($number-cards-tb);
+    }
 }
 
 .product__link {
@@ -24,42 +29,48 @@
     overflow: hidden;
 }
 
-// Оверлей карточки
 .product__group {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
-    transform: translateY(100%);
-    padding-top: 62px;
-    padding-right: 64px;
-    padding-left: 64px;
-    padding-bottom: 62px;
-
-    width: 100%;
-
-    background-color: getColor('accent');
-    opacity: 0.9;
-
-    transition: transform $time-animation $time-function;
-
-    // Ховер та фокус
-    .product__link:hover &,
-    .product__link:focus & {
-        transform: translateY(0);
-    }
+    display: none;
 }
 
-// Опис карточки
-.product__description {
-    margin: $zeroing-indent;
+// Оверлей карточки
+@media screen and (min-width: 1200px) {
+    .product__group {
+        position: absolute;
+        top: 0;
+        left: 0;
 
-    width: 322px;
-    color: getColor('white');
+        display: block;
+        padding-top: 63px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-bottom: 63px;
 
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
+        background-color: getColor('accent');
+
+        transform: translateY(100%);
+        opacity: 0.9;
+
+        transition: transform $time-animation $time-function;
+
+        // Ховер та фокус
+        .product__link:hover &,
+        .product__link:focus & {
+            transform: translateY(0);
+        }
+    }
+
+    // Опис карточки
+    .product__description {
+        margin: $zeroing-indent;
+
+        width: 322px;
+        color: getColor('white');
+
+        font-size: 18px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+    }
 }
 
 // Шапка карточки

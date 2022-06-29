@@ -21,28 +21,33 @@
 <body class="page-body">
 
     <!-- Шапка сайту -->
-    <header class="page-header page-header--border">
+    <header class="page-header">
         <div class="container page-header__container">
 
             <!-- Логотип сайту -->
             <a class="logo link" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span></a>
 
-            <!-- Навігація по сайту -->
+            <!-- Навігація -->
             <nav class="nav page-header__nav">
 
-                <!-- Елементи навігації -->
+                <!-- Спливаюче меню -->
                 <div class="nav__thumb" data-menu>
 
+                    <!-- Елементи навігації -->
                     <ul class="nav__list list">
+
                         <li class="nav__item">
                             <a class="nav__link link" href="./index.html">Студия</a>
                         </li>
+
                         <li class="nav__item">
-                            <a class="nav__link nav__link--active link" href="./portfolio.html">Портфолио</a>
+                            <a class="nav__link nav__link--active  link" href="./portfolio.html">Портфолио</a>
                         </li>
+
                         <li class="nav__item">
                             <a class="nav__link link" href="">Контакты</a>
                         </li>
+
                     </ul>
 
                     <!-- Контакти сайту -->
@@ -50,12 +55,18 @@
 
                         <li class="header-contacts__item">
                             <a class="header-contacts__phone link" href="tel:+380961111111">
+                                <svg class="header-contacts__icon" width="10" height="16">
+                                    <use href="./images/sprits/sprite.svg#phone"></use>
+                                </svg>
                                 +38 096 111 11 11
                             </a>
                         </li>
 
                         <li class="header-contacts__item">
                             <a class="header-contacts__email link" href="mailto:info@devstudio.com">
+                                <svg class="header-contacts__icon" width="16" height="12">
+                                    <use href="./images/sprits/sprite.svg#mail"></use>
+                                </svg>
                                 info@devstudio.com
                             </a>
                         </li>
@@ -64,18 +75,23 @@
 
                     <!-- Соц-мережі сайту -->
                     <ul class="header-networks list">
+
                         <li class="header-networks__item">
                             <a class="header-networks__link link link--margin-not" href="">Instagram</a>
                         </li>
+
                         <li class="header-networks__item">
                             <a class="header-networks__link link" href="">Twitter</a>
                         </li>
+
                         <li class="header-networks__item">
                             <a class="header-networks__link link" href="">Facebook</a>
                         </li>
+
                         <li class="header-networks__item">
                             <a class="header-networks__link link" href="">LinkedIn</a>
                         </li>
+
                     </ul>
                 </div>
 
@@ -88,6 +104,7 @@
                 </button>
             </nav>
 
+
         </div>
     </header>
 
@@ -98,6 +115,7 @@
         <!-- Наше портфоліо -->
         <section class="section portfolio">
             <div class="container">
+
                 <h1 class="title section__title" hidden>Портфолио</h1>
 
                 <!-- Фільтри для портфоліо -->
@@ -116,15 +134,13 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/technoquack-450.webp 450w, ./images/portfolio/mobile/WebP/technoquack-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/technoquack-450.jpg 450w, ./images/portfolio/mobile/technoquack-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/technoquack-450.jpg" alt="Веб-сайт: Технокряк"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                       ./images/portfolio/tablet/technoquack-354.jpg 354w,
+                                        ./images/portfolio/mobile/technoquack-450.jpg 450w,
+                                        ./images/portfolio/tablet/technoquack-354-2x.jpg 708w, 
+                                        ./images/portfolio/mobile/technoquack-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/technoquack-450.jpg" alt="Веб-сайт: Технокряк"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -147,16 +163,14 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/poster-450.webp 450w, ./images/portfolio/mobile/WebP/poster-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/poster-450.jpg 450w, ./images/portfolio/mobile/poster-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/poster-450.jpg"
-                                        alt="Постер New Orlean vs Golden Star"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img product__img" srcset="
+                                        ./images/portfolio/tablet/poster-354.jpg 354w,
+                                        ./images/portfolio/mobile/poster-450.jpg 450w, 
+                                        ./images/portfolio/tablet/poster-354-2x.jpg 708w, 
+                                        ./images/portfolio/mobile/poster-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/poster-450.jpg"
+                                    alt="Постер New Orlean vs Golden Star"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -180,16 +194,14 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="#">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/seafood-450.webp 450w, ./images/portfolio/mobile/WebP/seafood-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/seafood-450.jpg 450w, ./images/portfolio/mobile/seafood-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/seafood-450.jpg"
-                                        alt="Приложение для ресторана Seafood"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                        ./images/portfolio/tablet/seafood-354.jpg 354w,
+                                        ./images/portfolio/mobile/seafood-450.jpg 450w,
+                                        ./images/portfolio/tablet/seafood-354-2x.jpg 708w,  
+                                        ./images/portfolio/mobile/seafood-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/seafood-450.jpg"
+                                    alt="Приложение для ресторана Seafood"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -212,15 +224,13 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="#">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/prime-450.webp 450w, ./images/portfolio/mobile/WebP/prime-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/prime-450.jpg 450w, ./images/portfolio/mobile/prime-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/prime-450.jpg" alt="Проект Prime"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                        ./images/portfolio/tablet/prime-354.jpg 354w,
+                                        ./images/portfolio/mobile/prime-450.jpg 450w, 
+                                        ./images/portfolio/tablet/prime-354-2x.jpg 708w,  
+                                        ./images/portfolio/mobile/prime-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/prime-450.jpg" alt="Проект Prime"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -243,15 +253,13 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="#">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/boxes-450.webp 450w, ./images/portfolio/mobile/WebP/boxes-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/boxes-450.jpg 450w, ./images/portfolio/mobile/boxes-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/boxes-450.jpg" alt="Приложение Boxes"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                        ./images/portfolio/tablet/boxes-354.jpg 354w,
+                                        ./images/portfolio/mobile/boxes-450.jpg 450w, 
+                                        ./images/portfolio/tablet/boxes-354-2x.jpg 708w,  
+                                        ./images/portfolio/mobile/boxes-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/boxes-450.jpg" alt="Приложение Boxes"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -274,16 +282,14 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="#">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/inspiration-450.webp 450w, ./images/portfolio/mobile/WebP/inspiration-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/inspiration-450.jpg 450w, ./images/portfolio/mobile/inspiration-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/inspiration-450.jpg"
-                                        alt="Веб-сайт: Inspiration has no Borders"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                        ./images/portfolio/tablet/inspiration-354.jpg 354w,
+                                        ./images/portfolio/mobile/inspiration-450.jpg 450w,  
+                                        ./images/portfolio/tablet/inspiration-354-2x.jpg 708w,  
+                                        ./images/portfolio/mobile/inspiration-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/inspiration-450.jpg"
+                                    alt="Веб-сайт: Inspiration has no Borders"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -306,16 +312,14 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="#">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/edition-450.webp 450w, ./images/portfolio/mobile/WebP/edition-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/edition-450.jpg 450w, ./images/portfolio/mobile/edition-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/edition-450.jpg"
-                                        alt="Дизайн для издания Limited Edition"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                        ./images/portfolio/tablet/edition-354.jpg 354w,
+                                        ./images/portfolio/mobile/edition-450.jpg 450w, 
+                                        ./images/portfolio/tablet/edition-354-2x.jpg 708w,  
+                                        ./images/portfolio/mobile/edition-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/edition-450.jpg"
+                                    alt="Дизайн для издания Limited Edition"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -338,15 +342,13 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="#">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/project-450.webp 450w, ./images/portfolio/mobile/WebP/project-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/project-450.jpg 450w, ./images/portfolio/mobile/project-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/project-450.jpg" alt="Проект LAB"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                        ./images/portfolio/tablet/project-354.jpg 354w,
+                                        ./images/portfolio/mobile/project-450.jpg 450w, 
+                                        ./images/portfolio/tablet/project-354-2x.jpg 708w,  
+                                        ./images/portfolio/mobile/project-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/project-450.jpg" alt="Проект LAB"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -369,16 +371,13 @@
                     <li class="grid__item product__item">
                         <a class="product__link link" href="#">
                             <div class="product__thumb">
-                                <picture>
-                                    <source
-                                        srcset="./images/portfolio/mobile/WebP/growing-450.webp 450w, ./images/portfolio/mobile/WebP/growing-450-2x.webp 900w" />
-
-                                    <img class="img"
-                                        srcset="./images/portfolio/mobile/growing-450.jpg 450w, ./images/portfolio/mobile/growing-450-2x.jpg 900w"
-                                        src="./images/portfolio/mobile/growing-450.jpg"
-                                        alt="Приложение Growing Business"
-                                        sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
-                                </picture>
+                                <img class="img" srcset="
+                                        ./images/portfolio/mobile/growing-450.jpg 450w, 
+                                        ./images/portfolio/tablet/growing-354.jpg 354w,
+                                        ./images/portfolio/tablet/growing-354-2x.jpg 708w,  
+                                        ./images/portfolio/mobile/growing-450-2x.jpg 900w"
+                                    src="./images/portfolio/mobile/growing-450.jpg" alt="Приложение Growing Business"
+                                    sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
@@ -409,92 +408,99 @@
 
         <div class="container page-footer__container">
 
-            <!-- Адреса студії та контакти -->
-            <div>
+            <div class="page-footer__group">
+                <div>
+                    <!-- Логотип студії -->
+                    <a class="logo link" href="./portfolio.html" lang="en">Web<span
+                            class="logo__white">Studio</span></a>
 
-                <!-- Логотип студії -->
-                <a class="logo link" href="./portfolio.html" lang="en">Web<span class="logo__white">Studio</span></a>
+                    <!-- Контактна інформація -->
+                    <address class="page-footer__contacts">
 
-                <!-- Контактна інформація -->
-                <address class="page-footer__contacts">
+                        <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
+                            rel="noreferrer noopener">г.
+                            Киев, пр-т Леси
+                            Украинки, 26</a>
 
-                    <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
-                        rel="noreferrer noopener">г.
-                        Киев, пр-т Леси
-                        Украинки, 26</a>
+                        <!-- Список контактів -->
+                        <ul class="footer-contacts list">
+                            <li class="footer-contacts__item">
+                                <a class="footer-contacts__link link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="footer-contacts__item">
+                                <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
 
-                    <!-- Список контактів -->
-                    <ul class="footer-contacts list">
-                        <li class="footer-contacts__item">
-                            <a class="footer-contacts__link link"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </address>
+                </div>
+
+
+                <!-- Соціальні мережі студії -->
+                <div class="social-networks page-footer__social-networks">
+                    <!-- Заголовок футера -->
+                    <h3 class="page-footer__subtitle">присоединяйтесь</h3>
+
+                    <!-- Список соціальних мереж -->
+                    <ul class="social list">
+
+                        <li class="social__item">
+                            <a class="social__link link social__link--dark" href="" aria-label="instagram">
+                                <svg class="social__icon">
+                                    <use href="./images/sprits/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer-contacts__item">
-                            <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+
+                        <li class="social__item">
+                            <a class="social__link link social__link--dark" href="" aria-label="twitter">
+                                <svg class="social__icon">
+                                    <use href="./images/sprits/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
                         </li>
+
+                        <li class="social__item">
+                            <a class="social__link link social__link--dark" href="" aria-label="facebook">
+                                <svg class="social__icon">
+                                    <use href="./images/sprits/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a class="social__link link social__link--dark" href="" aria-label="linkedin">
+                                <svg class="social__icon">
+                                    <use href="./images/sprits/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+
                     </ul>
 
-                </address>
-            </div>
-
-            <!-- Соціальні мережі студії -->
-            <div class="social-networks page-footer__social-networks">
-                <h3 class="page-footer__subtitle">присоединяйтесь</h3>
-
-                <!-- Список соціальних мереж -->
-                <ul class="social list">
-
-                    <li class="social__item">
-                        <a class="social__link link social__link--dark" href="" aria-label="instagram">
-                            <svg class="social__icon">
-                                <use href="./images/sprits/sprite.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social__item">
-                        <a class="social__link link social__link--dark" href="" aria-label="twitter">
-                            <svg class="social__icon">
-                                <use href="./images/sprits/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social__item">
-                        <a class="social__link link social__link--dark" href="" aria-label="facebook">
-                            <svg class="social__icon">
-                                <use href="./images/sprits/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social__item">
-                        <a class="social__link link social__link--dark" href="" aria-label="linkedin">
-                            <svg class="social__icon">
-                                <use href="./images/sprits/sprite.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                </ul>
-
+                </div>
             </div>
 
             <!-- Форма підписки на розсилку -->
             <form class="subscription page-footer__subscription">
-                <h3 class="page-footer__subtitle">Подпишитесь на рассылку</h3>
+                <!-- Заголовок футера -->
+                <h3 class="page-footer__subtitle" id="subscription-form">Подпишитесь на рассылку</h3>
 
-                <!-- Поле для введення email -->
-                <input class="subscription__input" type="email" name="email" placeholder="E-mail">
+                <div class="subscription__group" role="group" aria-labelledby="subscription-form">
 
-                <!-- Кнопка відправки форми -->
-                <button class="subscription__btn button" type="submit">
-                    Подписаться
-                    <!-- Картинка кнопки -->
-                    <svg class="subscription__icon" width="24" height="24">
-                        <use href="./images/sprits/modal-window/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
+                    <!-- Поле для введення email -->
+                    <input class="subscription__input" type="email" name="email" placeholder="E-mail">
+
+                    <!-- Кнопка відправки форми -->
+                    <button class="subscription__btn button" type="submit">
+                        Подписаться
+                        <!-- Картинка кнопки -->
+                        <svg class="subscription__icon" width="24" height="24">
+                            <use href="./images/sprits/modal-window/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
 
             </form>
 

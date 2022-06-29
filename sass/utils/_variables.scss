@@ -51,6 +51,7 @@ $time-animation: 250ms;
 $time-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Кількість карточок для сітки
+
     // особливості
     $number-features-tel: 1;
     $number-features-tb: 2;
@@ -63,10 +64,12 @@ $time-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     // клієнти
     $number-clients-tel: 2;
-    $number-clients: 6;
+    $number-clients-tb: 3;
+    $number-clients-pc: 6;
 
     // портфоліо
     $number-cards-tel: 1;
+    $number-cards-tb: 2;
     $number-cards-pc: 3;
 
     // ми робимо

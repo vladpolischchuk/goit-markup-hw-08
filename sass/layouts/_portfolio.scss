@@ -1,8 +1,14 @@
 .portfolio {
     @include padding-bg-Section($section-padding-tel, $section-padding-tel, transparent);
-
+    
     // Відступи між елементами секції
     &__filters {
         margin-bottom: 40px;
+    }
+    // для планшету
+    @media screen and (min-width: 768px) {
+        &__filters {
+            margin-bottom: 30px;
+        }
     }
 }

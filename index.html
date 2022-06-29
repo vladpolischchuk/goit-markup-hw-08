@@ -26,22 +26,27 @@
       <!-- Логотип сайту -->
       <a class="logo link" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span></a>
 
-      <!-- Навігація по сайту -->
+      <!-- Навігація -->
       <nav class="nav page-header__nav">
 
-        <!-- Елементи навігації -->
+        <!-- Спливаюче меню -->
         <div class="nav__thumb" data-menu>
 
+          <!-- Елементи навігації -->
           <ul class="nav__list list">
+
             <li class="nav__item">
               <a class="nav__link nav__link--active link" href="./index.html">Студия</a>
             </li>
+
             <li class="nav__item">
               <a class="nav__link link" href="./portfolio.html">Портфолио</a>
             </li>
+
             <li class="nav__item">
               <a class="nav__link link" href="">Контакты</a>
             </li>
+
           </ul>
 
           <!-- Контакти сайту -->
@@ -49,12 +54,18 @@
 
             <li class="header-contacts__item">
               <a class="header-contacts__phone link" href="tel:+380961111111">
+                <svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/sprits/sprite.svg#phone"></use>
+                </svg>
                 +38 096 111 11 11
               </a>
             </li>
 
             <li class="header-contacts__item">
               <a class="header-contacts__email link" href="mailto:info@devstudio.com">
+                <svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/sprits/sprite.svg#mail"></use>
+                </svg>
                 info@devstudio.com
               </a>
             </li>
@@ -63,18 +74,23 @@
 
           <!-- Соц-мережі сайту -->
           <ul class="header-networks list">
+
             <li class="header-networks__item">
               <a class="header-networks__link link link--margin-not" href="">Instagram</a>
             </li>
+
             <li class="header-networks__item">
               <a class="header-networks__link link" href="">Twitter</a>
             </li>
+
             <li class="header-networks__item">
               <a class="header-networks__link link" href="">Facebook</a>
             </li>
+
             <li class="header-networks__item">
               <a class="header-networks__link link" href="">LinkedIn</a>
             </li>
+
           </ul>
         </div>
 
@@ -87,6 +103,7 @@
         </button>
       </nav>
 
+
     </div>
   </header>
 
@@ -97,25 +114,33 @@
     <section class="hero">
 
       <div class="container">
+
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="button button--animation" type="button" data-modal-open>Заказать услугу</button>
       </div>
+
     </section>
 
     <!-- Розділ особливостей -->
     <section class="section features">
       <div class="container">
+
+        <!-- Заголовок секції -->
         <h2 class="title section__title" hidden>Особенности</h2>
 
         <!-- Список особливостей -->
         <ul class="grid list">
 
           <li class="features__item grid__item">
+
+            <!-- Картинка -->
             <div class="features__wrapper">
               <svg width="70" height="70">
                 <use href="./images/sprits/sprite.svg#antenna"></use>
               </svg>
             </div>
+
+            <!-- Опис особливостей -->
             <h3 class="features__subtitle">Внимание к деталям</h3>
             <p class="features__description">Идейные соображения, а также начало повседневной работы по формированию
               позиции.
@@ -123,11 +148,15 @@
           </li>
 
           <li class="features__item grid__item">
+
+            <!-- Картинка -->
             <div class="features__wrapper">
               <svg width="70" height="70">
                 <use href="./images/sprits/sprite.svg#clock"></use>
               </svg>
             </div>
+
+            <!-- Опис особливостей -->
             <h3 class="features__subtitle">Пунктуальность</h3>
             <p class="features__description">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
@@ -135,11 +164,15 @@
           </li>
 
           <li class="features__item grid__item">
+
+            <!-- Картинка -->
             <div class="features__wrapper">
               <svg width="70" height="70">
                 <use href="./images/sprits/sprite.svg#diagram"></use>
               </svg>
             </div>
+
+            <!-- Опис особливостей -->
             <h3 class="features__subtitle">Планирование</h3>
             <p class="features__description">
               Равным образом консультация с широким активом в значительной степени обуславливает.
@@ -147,11 +180,15 @@
           </li>
 
           <li class="features__item grid__item">
+
+            <!-- Картинка -->
             <div class="features__wrapper">
               <svg width="70" height="70">
                 <use href="./images/sprits/sprite.svg#astronaut"></use>
               </svg>
             </div>
+
+            <!-- Опис особливостей -->
             <h3 class="features__subtitle">Современные технологии</h3>
             <p class="features__description">Значимость этих проблем настолько очевидна, что реализация плановых
               заданий.</p>
@@ -164,6 +201,8 @@
     <!-- Розділ "Ми робимо" -->
     <section class="section our-work">
       <div class="container">
+
+        <!-- Заголовок секції -->
         <h2 class="title section__title">Чем мы занимаемся</h2>
 
         <!-- Список того що ми робимо -->
@@ -215,19 +254,28 @@
     <!-- Розділ "Наша команда" -->
     <section class="section team">
       <div class="container">
+
+        <!-- Заголовок секції -->
         <h2 class="title section__title">Наша команда</h2>
 
         <!-- Список нашої команди -->
         <ul class="grid list">
-          <li class="team__item grid__item">
-            <picture>
-              <source
-                srcset="./images/team/mobile/WebP/igor-450.webp 450w, ./images/team/mobile/WebP/igor-450-2x.webp 900w" />
 
-              <img class="img"
-                srcset="./images/team/mobile/igor-450.jpg 450w, ./images/team/mobile/igor-450-2x.jpg 900w"
-                src="./images/team/mobile/igor-450.jpg" alt="Игорь Демьяненко - Product Designer"
-                sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+          <li class="team__item grid__item">
+            <!-- Фото -->
+            <picture>
+              <source srcset="
+                ./images/team/mobile/WebP/igor-450.webp 450w,
+                ./images/team/tablet/WebP/igor-354.webp 354w,
+                ./images/team/tablet/WebP/igor-354-2x.webp 708w,  
+                ./images/team/mobile/WebP/igor-450-2x.webp 900w" />
+
+              <img class="img" srcset="
+                ./images/team/mobile/igor-450.jpg 450w,
+                ./images/team/tablet/igor-354.jpg 354w,  
+                ./images/team/tablet/igor-354-2x.jpg 708w,   
+                ./images/team/mobile/igor-450-2x.jpg 900w" src="./images/team/mobile/igor-450.jpg"
+                alt="Игорь Демьяненко - Product Designer" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
             </picture>
 
             <!-- Опис члена команди -->
@@ -237,6 +285,7 @@
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="instagram">
                     <svg class="social__icon">
@@ -244,6 +293,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="twitter">
                     <svg class="social__icon">
@@ -251,6 +301,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="facebook">
                     <svg class="social__icon">
@@ -258,6 +309,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="linkedin">
                     <svg class="social__icon">
@@ -271,14 +323,20 @@
           </li>
 
           <li class="team__item grid__item">
+            <!-- Фото -->
             <picture>
-              <source
-                srcset="./images/team/mobile/WebP/olga-450.webp 450w, ./images/team/mobile/WebP/olga-450-2x.webp 900w" />
+              <source srcset="
+                ./images/team/mobile/WebP/olga-450.webp 450w,
+                ./images/team/tablet/WebP/olga-354.webp 354w,
+                ./images/team/tablet/WebP/olga-354-2x.webp 708w,   
+                ./images/team/mobile/WebP/olga-450-2x.webp 900w" />
 
-              <img class="img"
-                srcset="./images/team/mobile/olga-450.jpg 450w, ./images/team/mobile/olga-450-2x.jpg 900w"
-                src="./images/team/mobile/olga-450.jpg" alt="Ольга Репина - Frontend Developer"
-                sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+              <img class="img" srcset="
+                ./images/team/mobile/olga-450.jpg 450w,
+                ./images/team/tablet/olga-354.jpg 354w,  
+                ./images/team/tablet/olga-354-2x.jpg 708w,   
+                /images/team/mobile/olga-450-2x.jpg 900w" src="./images/team/mobile/olga-450.jpg"
+                alt="Ольга Репина - Frontend Developer" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
             </picture>
 
             <!-- Опис члена команди -->
@@ -288,6 +346,7 @@
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="instagram">
                     <svg class="social__icon">
@@ -295,6 +354,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="twitter">
                     <svg class="social__icon">
@@ -302,6 +362,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="facebook">
                     <svg class="social__icon">
@@ -309,6 +370,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="linkedin">
                     <svg class="social__icon">
@@ -316,20 +378,27 @@
                     </svg>
                   </a>
                 </li>
+
               </ul>
 
             </div>
           </li>
 
           <li class="team__item grid__item">
+            <!-- Фото -->
             <picture>
-              <source
-                srcset="./images/team/mobile/WebP/nykolay-450.webp 450w, ./images/team/mobile/WebP/nykolay-450-2x.webp 900w" />
+              <source srcset="
+                ./images/team/mobile/WebP/nykolay-450.webp 450w,
+                ./images/team/tablet/WebP/nykolay-354.webp 354w,
+                ./images/team/tablet/WebP/nykolay-354-2x.webp 708w,    
+                ./images/team/mobile/WebP/nykolay-450-2x.webp 900w" />
 
-              <img class="img"
-                srcset="./images/team/mobile/nykolay-450.jpg 450w, ./images/team/mobile/nykolay-450-2x.jpg 900w"
-                src="./images/team/mobile/nykolay-450.jpg" alt="Николай Тарасов - Marketingr"
-                sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+              <img class="img" srcset="
+                ./images/team/mobile/nykolay-450.jpg 450w,
+                ./images/team/tablet/nykolay-354.jpg 354w,  
+                ./images/team/tablet/nykolay-354-2x.jpg 708w,  
+                ./images/team/mobile/nykolay-450-2x.jpg 900w" src="./images/team/mobile/nykolay-450.jpg"
+                alt="Николай Тарасов - Marketingr" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
             </picture>
 
             <!-- Опис члена команди -->
@@ -339,6 +408,7 @@
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="instagram">
                     <svg class="social__icon">
@@ -346,6 +416,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="twitter">
                     <svg class="social__icon">
@@ -353,6 +424,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="facebook">
                     <svg class="social__icon">
@@ -360,6 +432,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="linkedin">
                     <svg class="social__icon">
@@ -367,20 +440,27 @@
                     </svg>
                   </a>
                 </li>
+
               </ul>
 
             </div>
           </li>
 
           <li class="team__item grid__item">
+            <!-- Фото -->
             <picture>
-              <source
-                srcset="./images/team/mobile/WebP/michael-450.webp 450w, ./images/team/mobile/WebP/michael-450-2x.webp 900w" />
+              <source srcset="
+                ./images/team/mobile/WebP/michael-450.webp 450w,
+                ./images/team/tablet/WebP/michael-354.webp 354w,
+                ./images/team/tablet/WebP/michael-354-2x.webp 708w,     
+                ./images/team/mobile/WebP/michael-450-2x.webp 900w" />
 
-              <img class="img"
-                srcset="./images/team/mobile/michael-450.jpg 450w, ./images/team/mobile/michael-450-2x.jpg 900w"
-                src="./images/team/mobile/michael-450.jpg" alt="Михаил Ермаков - UI Designer"
-                sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+              <img class="img" srcset="
+                ./images/team/mobile/michael-450.jpg 450w,
+                ./images/team/tablet/michael-354.jpg 354w,  
+                ./images/team/tablet/michael-354-2x.jpg 708w,  
+                ./images/team/mobile/michael-450-2x.jpg 900w" src="./images/team/mobile/michael-450.jpg"
+                alt="Михаил Ермаков - UI Designer" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
             </picture>
 
             <!-- Опис члена команди -->
@@ -390,6 +470,7 @@
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="instagram">
                     <svg class="social__icon">
@@ -397,6 +478,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="twitter">
                     <svg class="social__icon">
@@ -404,6 +486,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="facebook">
                     <svg class="social__icon">
@@ -411,6 +494,7 @@
                     </svg>
                   </a>
                 </li>
+
                 <li class="social__item">
                   <a class="social__link link" href="" aria-label="linkedin">
                     <svg class="social__icon">
@@ -418,6 +502,7 @@
                     </svg>
                   </a>
                 </li>
+
               </ul>
 
             </div>
@@ -430,6 +515,7 @@
     <!-- Розділ "Постійні клієнтти" -->
     <section class="section clients">
       <div class="container">
+        <!-- Заголовок секції -->
         <h2 class="title section__title">Постоянные клиенты</h2>
 
         <!-- Список клієнтів -->
@@ -486,6 +572,7 @@
         </ul>
       </div>
     </section>
+
   </main>
 
   <!-- Заключна частина сайту -->
@@ -493,91 +580,97 @@
 
     <div class="container page-footer__container">
 
-      <!-- Адреса студії та контакти -->
-      <div>
+      <div class="page-footer__group">
+        <div>
+          <!-- Логотип студії -->
+          <a class="logo link" href="./portfolio.html" lang="en">Web<span class="logo__white">Studio</span></a>
 
-        <!-- Логотип студії -->
-        <a class="logo link" href="./portfolio.html" lang="en">Web<span class="logo__white">Studio</span></a>
+          <!-- Контактна інформація -->
+          <address class="page-footer__contacts">
 
-        <!-- Контактна інформація -->
-        <address class="page-footer__contacts">
+            <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
+              rel="noreferrer noopener">г.
+              Киев, пр-т Леси
+              Украинки, 26</a>
 
-          <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
-            rel="noreferrer noopener">г.
-            Киев, пр-т Леси
-            Украинки, 26</a>
+            <!-- Список контактів -->
+            <ul class="footer-contacts list">
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
 
-          <!-- Список контактів -->
-          <ul class="footer-contacts list">
-            <li class="footer-contacts__item">
-              <a class="footer-contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </address>
+        </div>
+
+
+        <!-- Соціальні мережі студії -->
+        <div class="social-networks page-footer__social-networks">
+          <!-- Заголовок футера -->
+          <h3 class="page-footer__subtitle">присоединяйтесь</h3>
+
+          <!-- Список соціальних мереж -->
+          <ul class="social list">
+
+            <li class="social__item">
+              <a class="social__link link social__link--dark" href="" aria-label="instagram">
+                <svg class="social__icon">
+                  <use href="./images/sprits/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-contacts__item">
-              <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+
+            <li class="social__item">
+              <a class="social__link link social__link--dark" href="" aria-label="twitter">
+                <svg class="social__icon">
+                  <use href="./images/sprits/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
+
+            <li class="social__item">
+              <a class="social__link link social__link--dark" href="" aria-label="facebook">
+                <svg class="social__icon">
+                  <use href="./images/sprits/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link link social__link--dark" href="" aria-label="linkedin">
+                <svg class="social__icon">
+                  <use href="./images/sprits/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+
           </ul>
 
-        </address>
-      </div>
-
-      <!-- Соціальні мережі студії -->
-      <div class="social-networks page-footer__social-networks">
-        <h3 class="page-footer__subtitle">присоединяйтесь</h3>
-
-        <!-- Список соціальних мереж -->
-        <ul class="social list">
-
-          <li class="social__item">
-            <a class="social__link link social__link--dark" href="" aria-label="instagram">
-              <svg class="social__icon">
-                <use href="./images/sprits/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a class="social__link link social__link--dark" href="" aria-label="twitter">
-              <svg class="social__icon">
-                <use href="./images/sprits/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a class="social__link link social__link--dark" href="" aria-label="facebook">
-              <svg class="social__icon">
-                <use href="./images/sprits/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a class="social__link link social__link--dark" href="" aria-label="linkedin">
-              <svg class="social__icon">
-                <use href="./images/sprits/sprite.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-
-        </ul>
-
+        </div>
       </div>
 
       <!-- Форма підписки на розсилку -->
       <form class="subscription page-footer__subscription">
-        <h3 class="page-footer__subtitle">Подпишитесь на рассылку</h3>
+        <!-- Заголовок футера -->
+        <h3 class="page-footer__subtitle" id="subscription-form">Подпишитесь на рассылку</h3>
 
-        <!-- Поле для введення email -->
-        <input class="subscription__input" type="email" name="email" placeholder="E-mail">
+        <div class="subscription__group" role="group" aria-labelledby="subscription-form">
 
-        <!-- Кнопка відправки форми -->
-        <button class="subscription__btn button" type="submit">
-          Подписаться
-          <!-- Картинка кнопки -->
-          <svg class="subscription__icon" width="24" height="24">
-            <use href="./images/sprits/modal-window/icons.svg#icon-send"></use>
-          </svg>
-        </button>
+          <!-- Поле для введення email -->
+          <input class="subscription__input" type="email" name="email" placeholder="E-mail">
+
+          <!-- Кнопка відправки форми -->
+          <button class="subscription__btn button" type="submit">
+            Подписаться
+            <!-- Картинка кнопки -->
+            <svg class="subscription__icon" width="24" height="24">
+              <use href="./images/sprits/modal-window/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
 
       </form>
 

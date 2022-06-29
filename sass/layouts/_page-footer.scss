@@ -5,6 +5,14 @@
     &__container {
         text-align: center;
     }
+
+    // для планшету
+    @media screen and (min-width: 768px) {
+        &__group {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }
 
 .page-footer__contacts {
@@ -38,6 +46,7 @@
     @include contact-Link(0px, getColor('contact'));
 
     font-style: normal;
+    font-weight: 400;
 }
 
 // Підзаголовок футера
@@ -50,4 +59,9 @@
 // Соціальні мережі студії
 .page-footer__social-networks {
     margin-top: 60px;
+
+    // для планшету
+    @media screen and (min-width: 768px) {
+        margin-top: 5px;
+    }
 }

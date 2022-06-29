@@ -8,7 +8,7 @@
 
     text-align: center;
 
-    // Медіа запроси
+    // Фонові зображення для різних екранів
     @media screen and (max-width: 576px) {
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -73,7 +73,7 @@
 
 // Заголовок
 .hero__title {
-    max-width: 650px;
+    max-width: 360px;
 
     margin-top: $zeroing-indent;
     margin-right: auto;
@@ -83,7 +83,7 @@
     color: getColor('white');
 
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;

@@ -1,0 +1,68 @@
+// Стилі навігації для планшетів та ПК
+@media screen and (min-width: 768px) {
+    .page-header__nav {
+        margin-left: 88px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    // Гамбургер
+    .nav-button {
+        display: none;
+    }
+
+
+    // Спливаюче меню
+    .nav__thumb {
+        position: relative;
+        z-index: 0;
+
+        display: flex;
+        align-items: center;
+
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
+        background-color: transparent;
+    }
+    
+    // Елменти навігації
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__item:nth-child(n+2) {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+
+
+    // Контакти сайту
+    .header-contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0;
+        margin-left: 59px;
+    }
+
+    .header-contacts__item:nth-child(n+2) {
+        margin-top: 0;
+    }
+
+    .header-contacts__item:nth-child(1) {
+        margin-top: 10px;
+    }
+
+    .header-contacts__icon {
+        display: block;
+        margin-right: 10px;
+        fill: currentColor;
+    }
+
+    // Соц-мережі сайту
+    .header-networks {
+        display: none;
+    }
+}
