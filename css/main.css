@@ -768,7 +768,7 @@ summary {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 450px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
@@ -781,6 +781,11 @@ summary {
 .subscription__input:hover, .subscription__input:focus {
   border-color: #2196F3;
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .subscription__input {
+    width: 450px;
+  }
 }
 
 .subscription__btn {
