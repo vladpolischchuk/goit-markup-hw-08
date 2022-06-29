@@ -11,13 +11,13 @@
 
     transition: transform $time-animation $time-function;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 481px) {
         top: 50%;
         left: 50%;
 
         width: 450px;
 
-        transform: translate(-50%,-25%);
+        transform: translate(-50%,-35%);
     }
 }
 

@@ -3,7 +3,7 @@
     color: getColor('primary');
 
     &.modal-open {
-        overflow: hidden;
+        overflow-y: hidden;
     }
 }
 
