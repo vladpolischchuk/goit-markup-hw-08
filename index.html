@@ -13,11 +13,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
 
+  <!-- Анімація -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Стилі CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="page-body">
+
+  <!-- Прелоадер -->
+  <div class="loader">
+    <div class="animation-loader">
+      <div class="inner one"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+    </div>
+  </div>
 
   <!-- Шапка сайту -->
   <header class="page-header">
@@ -744,6 +757,7 @@
   </div>
 
   <!-- Скрипти -->
+  <script src="./js/preloader.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>

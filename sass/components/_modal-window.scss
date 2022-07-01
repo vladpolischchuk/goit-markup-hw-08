@@ -1,4 +1,12 @@
 // Модальне вікно
+.backdrop.is-hidden .modal {
+    transform:  scale(1.2);
+
+    @media screen and (min-width: 481px) {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
 .modal {
     position: relative;
     border-radius: 4px;
@@ -9,7 +17,7 @@
                 getColor('shadows-two'),
                 getColor('shadows-three');
 
-    transition: transform $animation ;
+    transition: transform $animation, scale $animation;
 
     @media screen and (min-width: 481px) {
         top: 50%;
@@ -17,7 +25,12 @@
 
         width: 450px;
 
-        transform: translate(-50%,-35%);
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    // на ПК
+    @media screen and (min-width: 1200px) {
+        width: 528px;
     }
 }
 

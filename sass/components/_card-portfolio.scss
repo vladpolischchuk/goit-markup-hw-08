@@ -90,15 +90,16 @@
     top: 0;
     left: 0;
 
-    display: block;
+    display: inline-block;
     padding-top: 63px;
-    padding-right: 24px;
     padding-left: 24px;
-    padding-bottom: 63px;
+
+    width: 100%;
+    height: 100%;
 
     background-color: getColor('accent');
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     opacity: 0.9;
 
     transition: transform $animation ;
