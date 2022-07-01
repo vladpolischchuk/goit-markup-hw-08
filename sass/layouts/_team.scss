@@ -14,12 +14,7 @@
 
     box-shadow: getColor('shadows-one'),
         getColor('shadows-two'),
-        getColor('shadows-three');
-
-    // для планшетів та ПК
-    @media screen and (min-width: 768px) {
-        @include size-Cards($number-team-tb);
-    } 
+        getColor('shadows-three'); 
 }
 
 // Опис члена команди
@@ -35,7 +30,7 @@
 }
 
 .team__subtitle {
-    @include margin-Title($zeroing-indent, 10px);
+    @include margin-Title(0, 10px);
     @include color-Subtitle(getColor('title'));
 
     font-size: 16px;
@@ -46,10 +41,30 @@
 }
 
 .team__description {
-    @include margin-Title($zeroing-indent, 16px);
+    @include margin-Title(0, 16px);
 
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
+}
+
+// Планшетна версія
+@media screen and (min-width: 768px) {
+    // Список нашої команди
+    .team__item {
+        @include size-Cards($number-team-tb);
+    }
+}
+
+// Комп'ютерна версія
+@media screen and (min-width: 1200px) {
+    .team {
+        @include padding-bg-Section($section-padding, $section-padding, getColor('light-bg-cl'));
+    }
+
+    // Список нашої команди
+    .team__item {
+        @include size-Cards($number-team-pc);
+    }
 }

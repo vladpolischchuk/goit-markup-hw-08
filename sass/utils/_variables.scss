@@ -38,17 +38,14 @@ $colors: (
 }
 
 // Відступи
-$zeroing-indent: 0px;
 $negative-card-indent: -15px;
 $positive-card-indent: 15px;
     // для секцій
     $section-padding-tel: 60px;
-    $section-padding-tb: 94px;
-    $section-padding-pc: 94px;
+    $section-padding: 94px;
 
-// Анімація: час та функція
-$time-animation: 250ms;
-$time-function: cubic-bezier(0.4, 0, 0.2, 1);
+// Анімація
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Кількість карточок для сітки
 

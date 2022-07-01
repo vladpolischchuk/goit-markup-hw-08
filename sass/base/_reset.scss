@@ -3,14 +3,14 @@
     color: getColor('primary');
 
     &.modal-open {
-        overflow-y: hidden;
+        overflow: hidden;
     }
 }
 
 .list {
-    margin-top: $zeroing-indent;
-    margin-bottom: $zeroing-indent;
-    padding-left: $zeroing-indent;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 
     list-style: none;
 }

@@ -1,22 +1,12 @@
 // Заключна частина сайту
 .page-footer {
-    @include padding-bg-Section(60px, 60px, getColor('main-bg-cl'));
+    @include padding-bg-Section($section-padding-tel, $section-padding-tel, getColor('main-bg-cl'));
 
-    &__container {
-        text-align: center;
-    }
-
-    // для планшету
-    @media screen and (min-width: 768px) {
-        &__group {
-            display: flex;
-            justify-content: space-around;
+    @media screen and (max-width: 1199px) {
+        &__container {
+            text-align: center;
         }
     }
-}
-
-.page-footer__contacts {
-    margin-top: 20px;
 }
 
 // Адреса сайту
@@ -29,24 +19,40 @@
     letter-spacing: 0.03em;
     font-weight: 400;
 
-    transition: color $time-animation $time-function;
+    transition: color $animation;
 
     // Ховер та фокус
-    &:hover {
+    &:hover,
+    &:focus {
         color: getColor('accent');
     }
 }
 
 // Контакти сайту
+.page-footer__contacts {
+    margin-top: 20px;
+}
+
 .footer-contacts__item {
     margin-top: 9px;
 }
 
 .footer-contacts__link {
-    @include contact-Link(0px, getColor('contact'));
+    color: getColor('contact');
 
     font-style: normal;
-    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: $medium-weight;
+
+    transition: color $animation;
+
+    // Ховер та фокус
+    &:hover,
+    &:focus {
+        color: getColor('accent');
+    }
 }
 
 // Підзаголовок футера
@@ -59,9 +65,33 @@
 // Соціальні мережі студії
 .page-footer__social-networks {
     margin-top: 60px;
+}
 
-    // для планшету
-    @media screen and (min-width: 768px) {
+// Планшетна версія
+@media screen and (min-width: 768px) {
+    .page-footer {
+        &__group {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+   
+    // Соціальні мережі студії 
+    .page-footer__social-networks {
         margin-top: 5px;
+    }
+}
+
+// Комп'ютерна версія
+@media screen and (min-width: 1200px) {
+    .page-footer {
+        &__container {
+            display: flex;
+        }
+    }
+
+    // Соціальні мережі студії 
+    .page-footer__social-networks {
+        margin-left: 70px;
     }
 }

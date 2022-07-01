@@ -1,3 +1,4 @@
+// Розділ портфоліо
 .portfolio {
     @include padding-bg-Section($section-padding-tel, $section-padding-tel, transparent);
     
@@ -5,10 +6,20 @@
     &__filters {
         margin-bottom: 40px;
     }
-    // для планшету
+
+    // Планшетна версія
     @media screen and (min-width: 768px) {
         &__filters {
             margin-bottom: 30px;
+        }
+    }
+
+    // Комп'ютерна версія
+    @media screen and (min-width: 1200px) {
+        @include padding-bg-Section($section-padding, $section-padding, transparent);
+
+        &__filters {
+            margin-bottom: 50px;
         }
     }
 }

@@ -9,7 +9,7 @@
                 getColor('shadows-two'),
                 getColor('shadows-three');
 
-    transition: transform $time-animation $time-function;
+    transition: transform $animation ;
 
     @media screen and (min-width: 481px) {
         top: 50%;
@@ -41,7 +41,7 @@
                 getColor('shadows-two'),
                 getColor('shadows-three');
 
-    transition: fill $time-animation $time-function;
+    transition: fill $animation ;
 
     // Ховер та фокус
     &:hover,

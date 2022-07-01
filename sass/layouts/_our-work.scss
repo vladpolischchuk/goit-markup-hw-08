@@ -1,7 +1,12 @@
 // Розділ "Ми робимо"
 .our-work {
     display: none;
-    @include padding-bg-Section($zeroing-indent, $section-padding-pc, transparent)
+    @include padding-bg-Section(0, $section-padding, transparent);
+
+    // На ПК
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 
 // Список того що ми робимо
@@ -27,6 +32,6 @@
 
 .our-work__subtitle {
     @include color-Subtitle(getColor('white'));
-    @include margin-Title($zeroing-indent, $zeroing-indent);
+    @include margin-Title(0, 0);
     @extend %subtitle;
 }

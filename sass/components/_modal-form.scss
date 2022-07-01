@@ -45,7 +45,7 @@
     background-color: transparent;
     color: getColor('title');
 
-    transition: border-color $time-animation $time-function;
+    transition: border-color $animation ;
 
     // Ховер та фокус
     &:hover,
@@ -61,7 +61,7 @@
     top: 27px;
     left: 11px;
 
-    transition: fill $time-animation $time-function;
+    transition: fill $animation ;
 
     // Ховер та фокус
     .form__input:hover + &,
@@ -86,7 +86,7 @@
     color: getColor('title');
 
     resize: none;
-    transition: border-color $time-animation $time-function;
+    transition: border-color $animation ;
 
     // Колір плейсхолдера
     &::placeholder {
@@ -128,9 +128,9 @@
     border: 2px solid getColor('title');
     border-radius: 3px;
 
-    transition: border-color $time-animation $time-function,
-        background-color $time-animation $time-function,
-        background-image $time-animation $time-function;
+    transition: border-color $animation ,
+        background-color $animation ,
+        background-image $animation ;
 
     // Зачеканий чекбокс
     .checkbox__input:checked + & {
@@ -148,7 +148,7 @@
     color: getColor('accent');
     text-decoration: underline;
 
-    transition: color $time-animation $time-function;
+    transition: color $animation ;
 
     // Ховер та фокус
     &:hover,

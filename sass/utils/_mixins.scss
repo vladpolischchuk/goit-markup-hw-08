@@ -6,27 +6,6 @@
     background-color: $bg-color;
 }
 
-// Стилі ссилок для контактів
-@mixin contact-Link($px, $color) {
-    padding-top: $px;
-    padding-bottom: $px;
-
-    color: $color;
-
-    font-weight: $medium-weight;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: color $time-animation $time-function;
-
-    // Ховер та фокус
-    &:hover,
-    &:focus {
-        color: getColor('accent');
-    }
-}
-
 //Відступи для всіх заголовків
 @mixin margin-Title($t-px, $b-px) {
     margin-top: $t-px;

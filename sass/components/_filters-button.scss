@@ -45,9 +45,9 @@
 
     overflow: hidden;
 
-    transition: color $time-animation $time-function,
-                background-color $time-animation $time-function,
-                box-shadow $time-animation $time-function;
+    transition: color $animation ,
+                background-color $animation ,
+                box-shadow $animation ;
 
     // Ховер та фокус
     &:hover,

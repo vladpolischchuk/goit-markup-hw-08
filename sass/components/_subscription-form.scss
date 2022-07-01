@@ -19,7 +19,7 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
 
-    transition: border-color $time-animation $time-function;
+    transition: border-color $animation;
 
     // Ховер та фокус
     &:hover,
@@ -47,4 +47,26 @@
     margin-left: 10px;
 
     fill: currentColor;
+}
+
+// Комп'ютерна версія
+@media screen and (min-width: 1200px) {
+    .page-footer__subscription {
+        margin-top: 5px;
+        margin-left: 93px;
+    }
+
+    .subscription__group {
+        display: flex;
+    }
+
+    .subscription__input {
+        width: 358px;
+    }
+
+    // Кнопка для відправки форми
+    .subscription__btn {
+        margin-top: 0;
+        margin-left: 12px;
+    }
 }

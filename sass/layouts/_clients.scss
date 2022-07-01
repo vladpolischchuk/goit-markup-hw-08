@@ -7,11 +7,6 @@
 .clients__item {
     height: 92px;
     @include size-Cards($number-clients-tel);
-    
-    // для панетів та ПК
-    @media screen and (min-width: 768px) {
-        @include size-Cards($number-clients-tb);
-    }
 }
 
 .clients__link {
@@ -27,8 +22,7 @@
 
     color: getColor('icon-bg-cl');
 
-    transition: border-color $time-animation $time-function,
-        color $time-animation $time-function;
+    transition: border-color $animation, color $animation;
 
     // Ховер та фокус
     &:hover,
@@ -46,4 +40,24 @@
     height: 60px;
 
     fill: currentColor;
+}
+
+// Планшетна версія
+@media screen and (min-width: 768px) {
+    // Список клієнтів
+    .clients__item {
+        @include size-Cards($number-clients-tb);
+    }
+}
+
+// Комп'ютерна версія
+@media screen and (min-width: 1200px) {
+    .clients {
+        @include padding-bg-Section($section-padding, $section-padding, transparent);
+    }
+
+    // Список клієнтів
+    .clients__item {
+        @include size-Cards($number-clients-pc);
+    }
 }

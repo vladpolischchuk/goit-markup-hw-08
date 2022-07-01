@@ -1,6 +1,11 @@
 // Розділ Герой
 .hero {
-    @include padding-bg-Section(200px, 200px, getColor('main-bg-cl'));
+    @include padding-bg-Section(118px,118px, getColor('main-bg-cl'));
+
+    // на ПК
+    @media screen and (min-width: 1200px) {
+        @include padding-bg-Section(200px, 200px, getColor('main-bg-cl'));
+    }
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +80,7 @@
 .hero__title {
     max-width: 360px;
 
-    margin-top: $zeroing-indent;
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
@@ -87,5 +92,11 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    // на ПК
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        max-width: 695px;
+    }
 }
 

@@ -17,8 +17,8 @@
 
     overflow-y: scroll;
     opacity: 1;
-    transition: opacity $time-animation $time-function,
-                visibility $time-animation $time-function;
+    transition: opacity $animation ,
+                visibility $animation ;
 }
 
 // Для приховання Backdrop
