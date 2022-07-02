@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,9 @@
         rel="stylesheet">
 
     <!-- Стилі CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -35,27 +37,37 @@
         <div class="container page-header__container">
 
             <!-- Логотип сайту -->
-            <a class="logo link" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span></a>
+            <a class="logo link" href="./index.html" lang="en" aria-label="Логотип сайту">Web<span
+                    class="logo__dark">Studio</span></a>
 
             <!-- Навігація -->
             <nav class="nav page-header__nav">
 
+                <!-- Гамбургер -->
+                <button class="nav-button" type="button" aria-controls="menu-container" aria-expanded="false"
+                    data-menu-button>
+                    <svg width="24" height="19" aria-label="Перемикач мобільного меню">
+                        <use class="icon-cross" href="./images/sprits/menu/gamburger.svg#icon-close"></use>
+                        <use class="icon-menu" href="./images/sprits/menu/gamburger.svg#icon-menu"></use>
+                    </svg>
+                </button>
+
                 <!-- Спливаюче меню -->
-                <div class="nav__thumb" data-menu>
+                <div class="nav__thumb" id="menu-container" data-menu>
 
                     <!-- Елементи навігації -->
                     <ul class="nav__list list">
 
                         <li class="nav__item">
-                            <a class="nav__link link" href="./index.html">Студия</a>
+                            <a class="nav__link link" href="./index.html">Студія</a>
                         </li>
 
                         <li class="nav__item">
-                            <a class="nav__link nav__link--active  link" href="./portfolio.html">Портфолио</a>
+                            <a class="nav__link nav__link--active link" href="./portfolio.html">Портфоліо</a>
                         </li>
 
                         <li class="nav__item">
-                            <a class="nav__link link" href="">Контакты</a>
+                            <a class="nav__link link" href="">Контакти</a>
                         </li>
 
                     </ul>
@@ -64,7 +76,8 @@
                     <ul class="header-contacts list">
 
                         <li class="header-contacts__item">
-                            <a class="header-contacts__phone link" href="tel:+380961111111">
+                            <a class="header-contacts__phone link" href="tel:+380961111111" target="_blank"
+                                rel="noreferrer noopener" aria-label="Номер телефону">
                                 <svg class="header-contacts__icon" width="10" height="16">
                                     <use href="./images/sprits/sprite.svg#phone"></use>
                                 </svg>
@@ -73,7 +86,8 @@
                         </li>
 
                         <li class="header-contacts__item">
-                            <a class="header-contacts__email link" href="mailto:info@devstudio.com">
+                            <a class="header-contacts__email link" href="mailto:info@devstudio.com" target="_blank"
+                                rel="noreferrer noopener" aria-label="E-mail сайту">
                                 <svg class="header-contacts__icon" width="16" height="12">
                                     <use href="./images/sprits/sprite.svg#mail"></use>
                                 </svg>
@@ -87,38 +101,33 @@
                     <ul class="header-networks list">
 
                         <li class="header-networks__item">
-                            <a class="header-networks__link link link--margin-not" href="">Instagram</a>
+                            <a class="header-networks__link link link--margin-not" href="https://www.instagram.com/"
+                                target="_blank" rel="noopener noreferrer">Instagram</a>
                         </li>
 
                         <li class="header-networks__item">
-                            <a class="header-networks__link link" href="">Twitter</a>
+                            <a class="header-networks__link link" href="https://twitter.com/?lang=uk" target="_blank"
+                                rel="noopener noreferrer">Twitter</a>
                         </li>
 
                         <li class="header-networks__item">
-                            <a class="header-networks__link link" href="">Facebook</a>
+                            <a class="header-networks__link link" href="https://www.facebook.com/" target="_blank"
+                                rel="noopener noreferrer">Facebook</a>
                         </li>
 
                         <li class="header-networks__item">
-                            <a class="header-networks__link link" href="">LinkedIn</a>
+                            <a class="header-networks__link link" href="https://www.linkedin.com/" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a>
                         </li>
 
                     </ul>
                 </div>
 
-                <!-- Гамбургер -->
-                <button class="nav-button" type="button" data-menu-button aria-expanded="false">
-                    <svg width="24" height="19">
-                        <use class="icon-cross" href="./images/sprits/menu/gamburger.svg#icon-close"></use>
-                        <use class="icon-menu" href="./images/sprits/menu/gamburger.svg#icon-menu"></use>
-                    </svg>
-                </button>
             </nav>
 
 
         </div>
     </header>
-
-
 
     <!-- Унікальний вміст сторінки -->
     <main>
@@ -126,14 +135,14 @@
         <section class="section portfolio">
             <div class="container">
 
-                <h1 class="title section__title" hidden>Портфолио</h1>
+                <h1 class="title section__title" hidden>Портфоліо</h1>
 
                 <!-- Фільтри для портфоліо -->
-                <ul class="filters list portfolio__filters">
+                <ul class="filters list portfolio__filters" aria-label="Список фільтрів для портфоліо">
                     <li class="filters__item"><button class="filters__btn filters__btn--active btn"
                             type="button">Все</button></li>
-                    <li class="filters__item"><button class="filters__btn btn" type="button">Веб-сайты</button></li>
-                    <li class="filters__item"><button class="filters__btn btn" type="button">Приложения</button></li>
+                    <li class="filters__item"><button class="filters__btn btn" type="button">Веб-сайти</button></li>
+                    <li class="filters__item"><button class="filters__btn btn" type="button">Додатки</button></li>
                     <li class="filters__item"><button class="filters__btn btn" type="button">Дизайн</button></li>
                     <li class="filters__item"><button class="filters__btn btn" type="button">Маркетинг</button></li>
                 </ul>
@@ -142,7 +151,8 @@
                 <ul class="grid product list">
 
                     <li class="grid__item product__item">
-                        <a class="product__link link product__link--grow" href="">
+                        <a class="product__link link product__link--grow" href=""
+                            aria-label="Картка продукту: веб-сайт Технокряк">
                             <div class="product__thumb">
                                 <img class="img" srcset="
                                         ./images/portfolio/tablet/technoquack-354.jpg 354w,
@@ -156,10 +166,10 @@
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -173,12 +183,15 @@
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="">
+                        <a class="product__link link" href=""
+                            aria-label="Картка продукту: постер New Orlean vs Golden Star">
                             <div class="product__thumb">
                                 <img class="img product__img" srcset="
                                         ./images/portfolio/tablet/poster-354.jpg 354w,
+                                        ./images/portfolio/PC/poster-370.jpg 370w,
                                         ./images/portfolio/mobile/poster-450.jpg 450w, 
-                                        ./images/portfolio/tablet/poster-354-2x.jpg 708w, 
+                                        ./images/portfolio/tablet/poster-354-2x.jpg 708w,
+                                        ./images/portfolio/PC/poster-370-2x.jpg 740w, 
                                         ./images/portfolio/mobile/poster-450-2x.jpg 900w"
                                     src="./images/portfolio/mobile/poster-450.jpg"
                                     alt="Постер New Orlean vs Golden Star"
@@ -186,10 +199,10 @@
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -204,23 +217,25 @@
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="#">
+                        <a class="product__link link" href=""
+                            aria-label="Картка продукту: додаток для ресторану Seafood">
                             <div class="product__thumb">
                                 <img class="img" srcset="
                                         ./images/portfolio/tablet/seafood-354.jpg 354w,
+                                        ./images/portfolio/PC/seafood-370.jpg 370w,
                                         ./images/portfolio/mobile/seafood-450.jpg 450w,
-                                        ./images/portfolio/tablet/seafood-354-2x.jpg 708w,  
+                                        ./images/portfolio/tablet/seafood-354-2x.jpg 708w,
+                                        ./images/portfolio/PC/seafood-370-2x.jpg 740w,  
                                         ./images/portfolio/mobile/seafood-450-2x.jpg 900w"
-                                    src="./images/portfolio/mobile/seafood-450.jpg"
-                                    alt="Приложение для ресторана Seafood"
+                                    src="./images/portfolio/mobile/seafood-450.jpg" alt="Додаток для ресторану Seafood"
                                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -228,76 +243,83 @@
                             <!-- Шапка карточки -->
                             <div class="product__header">
                                 <h2 class="product__title title">Ресторан <span lang="en">Seafood</span></h2>
-                                <p class="product__subtitle">Приложение</p>
+                                <p class="product__subtitle">Додаток</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="#">
+                        <a class="product__link link" href="" aria-label="Картка продукту: проєкт Prime">
                             <div class="product__thumb">
                                 <img class="img" srcset="
                                         ./images/portfolio/tablet/prime-354.jpg 354w,
+                                        ./images/portfolio/PC/prime-370.jpg 370w,
                                         ./images/portfolio/mobile/prime-450.jpg 450w, 
-                                        ./images/portfolio/tablet/prime-354-2x.jpg 708w,  
+                                        ./images/portfolio/tablet/prime-354-2x.jpg 708w,
+                                        ./images/portfolio/PC/prime-370-2x.jpg 740w,  
                                         ./images/portfolio/mobile/prime-450-2x.jpg 900w"
-                                    src="./images/portfolio/mobile/prime-450.jpg" alt="Проект Prime"
+                                    src="./images/portfolio/mobile/prime-450.jpg" alt="Проєкт Prime"
                                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Шапка карточки -->
                             <div class="product__header">
-                                <h2 class="product__title title">Ресторан <span lang="en">Seafood</span></h2>
-                                <p class="product__subtitle">Приложение</p>
+                                <h2 class="product__title title">Проєкт <span lang="en">Prime</span></h2>
+                                <p class="product__subtitle">Маркетинг</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="#">
+                        <a class="product__link link" href="" aria-label="Картка продукту: додаток Boxes">
                             <div class="product__thumb">
                                 <img class="img" srcset="
                                         ./images/portfolio/tablet/boxes-354.jpg 354w,
+                                        ./images/portfolio/PC/boxes-370.jpg 370w,
                                         ./images/portfolio/mobile/boxes-450.jpg 450w, 
                                         ./images/portfolio/tablet/boxes-354-2x.jpg 708w,  
+                                        ./images/portfolio/PC/boxes-370-2x.jpg 740w,
                                         ./images/portfolio/mobile/boxes-450-2x.jpg 900w"
-                                    src="./images/portfolio/mobile/boxes-450.jpg" alt="Приложение Boxes"
+                                    src="./images/portfolio/mobile/boxes-450.jpg" alt="Додаток Boxes"
                                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Шапка карточки -->
                             <div class="product__header">
-                                <h2 class="product__title title">Проект <span lang="en">Boxes</span></h2>
-                                <p class="product__subtitle">Приложение</p>
+                                <h2 class="product__title title">Додаток<span lang="en">Boxes</span></h2>
+                                <p class="product__subtitle">Додаток</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="#">
+                        <a class="product__link link" href=""
+                            aria-label="Картка продукту: веб-сайт Inspiration has no Borders">
                             <div class="product__thumb">
                                 <img class="img" srcset="
                                         ./images/portfolio/tablet/inspiration-354.jpg 354w,
+                                        ./images/portfolio/PC/inspiration-370.jpg 370w,
                                         ./images/portfolio/mobile/inspiration-450.jpg 450w,  
                                         ./images/portfolio/tablet/inspiration-354-2x.jpg 708w,  
+                                        ./images/portfolio/PC/inspiration-370-2x.jpg 740w,
                                         ./images/portfolio/mobile/inspiration-450-2x.jpg 900w"
                                     src="./images/portfolio/mobile/inspiration-450.jpg"
                                     alt="Веб-сайт: Inspiration has no Borders"
@@ -305,10 +327,10 @@
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -322,81 +344,88 @@
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="#">
+                        <a class="product__link link" href=""
+                            aria-label="Картка продукту: дизайн для видання Limited Edition">
                             <div class="product__thumb">
                                 <img class="img" srcset="
                                         ./images/portfolio/tablet/edition-354.jpg 354w,
+                                         ./images/portfolio/PC/edition-370.jpg 370w,
                                         ./images/portfolio/mobile/edition-450.jpg 450w, 
-                                        ./images/portfolio/tablet/edition-354-2x.jpg 708w,  
+                                        ./images/portfolio/tablet/edition-354-2x.jpg 708w,
+                                        ./images/portfolio/PC/edition-370-2x.jpg 740w,  
                                         ./images/portfolio/mobile/edition-450-2x.jpg 900w"
                                     src="./images/portfolio/mobile/edition-450.jpg"
-                                    alt="Дизайн для издания Limited Edition"
+                                    alt="Дизайн для видання Limited Edition"
                                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Шапка карточки -->
                             <div class="product__header">
-                                <h2 class="product__title title">Издание <span lang="en">Limited Edition</span></h2>
+                                <h2 class="product__title title">Видання <span lang="en">Limited Edition</span></h2>
                                 <p class="product__subtitle">Дизайн</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="#">
+                        <a class="product__link link" href="" aria-label="Картка продукту: проэкт LAB">
                             <div class="product__thumb">
                                 <img class="img" srcset="
                                         ./images/portfolio/tablet/project-354.jpg 354w,
+                                        ./images/portfolio/PC/project-370.jpg 370w,  
                                         ./images/portfolio/mobile/project-450.jpg 450w, 
-                                        ./images/portfolio/tablet/project-354-2x.jpg 708w,  
+                                        ./images/portfolio/tablet/project-354-2x.jpg 708w, 
+                                        ./images/portfolio/PC/project-370-2x.jpg 740w,   
                                         ./images/portfolio/mobile/project-450-2x.jpg 900w"
-                                    src="./images/portfolio/mobile/project-450.jpg" alt="Проект LAB"
+                                    src="./images/portfolio/mobile/project-450.jpg" alt="Проєкт LAB"
                                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Шапка карточки -->
                             <div class="product__header">
-                                <h2 class="product__title title">Проект <span lang="en">LAB</span></h2>
+                                <h2 class="product__title title">Проєкт <span lang="en">LAB</span></h2>
                                 <p class="product__subtitle">Маркетинг</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="grid__item product__item">
-                        <a class="product__link link" href="#">
+                        <a class="product__link link" href="" aria-label="Картка продукту: додаток Growing Business">
                             <div class="product__thumb">
                                 <img class="img" srcset="
-                                        ./images/portfolio/mobile/growing-450.jpg 450w, 
+                                        ./images/portfolio/mobile/growing-450.jpg 450w,
+                                        ./images/portfolio/PC/growing-370.jpg 370w,    
                                         ./images/portfolio/tablet/growing-354.jpg 354w,
-                                        ./images/portfolio/tablet/growing-354-2x.jpg 708w,  
+                                        ./images/portfolio/tablet/growing-354-2x.jpg 708w,
+                                        ./images/portfolio/PC/growing-370-2x.jpg 740w,     
                                         ./images/portfolio/mobile/growing-450-2x.jpg 900w"
-                                    src="./images/portfolio/mobile/growing-450.jpg" alt="Приложение Growing Business"
+                                    src="./images/portfolio/mobile/growing-450.jpg" alt="Додаток Growing Business"
                                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
 
                                 <!-- Оверлей карточки -->
                                 <div class="product__group">
-                                    <p class="product__description">Ресурс предлагает комплексные предложения
-                                        с разным уровнем функционала и
-                                        сервисов. Все это позволит посетителю получить
-                                        исчерпывающие сведения о компании или частном лице.
+                                    <p class="product__description">Ресурс пропонує комплексні пропозиції
+                                        з різним рівнем функціоналу та
+                                        сервісів. Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
                                     </p>
                                 </div>
                             </div>
@@ -404,7 +433,7 @@
                             <!-- Шапка карточки -->
                             <div class="product__header">
                                 <h2 class="product__title title" lang="en">Growing Business</h2>
-                                <p class="product__subtitle">Приложение</p>
+                                <p class="product__subtitle">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -423,25 +452,26 @@
             <div class="page-footer__group">
                 <div>
                     <!-- Логотип студії -->
-                    <a class="logo link" href="./portfolio.html" lang="en">Web<span
+                    <a class="logo link" href="./portfolio.html" lang="en" aria-label="Логотип сайту">Web<span
                             class="logo__white">Studio</span></a>
 
                     <!-- Контактна інформація -->
                     <address class="page-footer__contacts">
 
                         <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
-                            rel="noreferrer noopener">г.
-                            Киев, пр-т Леси
-                            Украинки, 26</a>
+                            rel="noreferrer noopener" aria-label="Адреса сайту">м.
+                            Київ, пр-т Лесі
+                            Українки, 26</a>
 
                         <!-- Список контактів -->
                         <ul class="footer-contacts list">
                             <li class="footer-contacts__item">
-                                <a class="footer-contacts__link link"
-                                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                                <a class="footer-contacts__link link" href="mailto:info@devstudio.com" target="_blank"
+                                    rel="noreferrer noopener" aria-label="E-mail сайту">info@devstudio.com</a>
                             </li>
                             <li class="footer-contacts__item">
-                                <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                                <a class="footer-contacts__link link" href="tel:+380961111111" target="_blank"
+                                    rel="noreferrer noopener" aria-label="Номер телефону сайту">+38 096 111 11 11</a>
                             </li>
                         </ul>
 
@@ -452,13 +482,14 @@
                 <!-- Соціальні мережі студії -->
                 <div class="social-networks page-footer__social-networks">
                     <!-- Заголовок футера -->
-                    <h3 class="page-footer__subtitle">присоединяйтесь</h3>
+                    <h3 class="page-footer__subtitle">приєднуйтесь</h3>
 
                     <!-- Список соціальних мереж -->
                     <ul class="social list">
 
                         <li class="social__item">
-                            <a class="social__link link social__link--dark" href="" aria-label="instagram">
+                            <a class="social__link link social__link--dark" href="https://www.instagram.com/"
+                                target="_blank" rel="noopener noreferrer" aria-label="instagram">
                                 <svg class="social__icon">
                                     <use href="./images/sprits/sprite.svg#instagram"></use>
                                 </svg>
@@ -466,7 +497,8 @@
                         </li>
 
                         <li class="social__item">
-                            <a class="social__link link social__link--dark" href="" aria-label="twitter">
+                            <a class="social__link link social__link--dark" href="https://twitter.com/?lang=uk"
+                                target="_blank" rel="noopener noreferrer" aria-label="twitter">
                                 <svg class="social__icon">
                                     <use href="./images/sprits/sprite.svg#twitter"></use>
                                 </svg>
@@ -474,7 +506,8 @@
                         </li>
 
                         <li class="social__item">
-                            <a class="social__link link social__link--dark" href="" aria-label="facebook">
+                            <a class="social__link link social__link--dark" href="https://www.facebook.com/"
+                                target="_blank" rel="noopener noreferrer" aria-label="facebook">
                                 <svg class="social__icon">
                                     <use href="./images/sprits/sprite.svg#facebook"></use>
                                 </svg>
@@ -482,7 +515,8 @@
                         </li>
 
                         <li class="social__item">
-                            <a class="social__link link social__link--dark" href="" aria-label="linkedin">
+                            <a class="social__link link social__link--dark" href="https://www.linkedin.com/"
+                                target="_blank" rel="noopener noreferrer" aria-label="linkedin">
                                 <svg class="social__icon">
                                     <use href="./images/sprits/sprite.svg#linkedin"></use>
                                 </svg>
@@ -497,7 +531,7 @@
             <!-- Форма підписки на розсилку -->
             <form class="subscription page-footer__subscription">
                 <!-- Заголовок футера -->
-                <h3 class="page-footer__subtitle" id="subscription-form">Подпишитесь на рассылку</h3>
+                <h3 class="page-footer__subtitle" id="subscription-form">Підпишіться на розсилку</h3>
 
                 <div class="subscription__group" role="group" aria-labelledby="subscription-form">
 
@@ -506,7 +540,7 @@
 
                     <!-- Кнопка відправки форми -->
                     <button class="subscription__btn button" type="submit">
-                        Подписаться
+                        Підписатися
                         <!-- Картинка кнопки -->
                         <svg class="subscription__icon" width="24" height="24">
                             <use href="./images/sprits/modal-window/icons.svg#icon-send"></use>
@@ -520,6 +554,7 @@
     </footer>
 
     <!-- Скрипти -->
+    <script src="./js/preloader.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/pulse-btn.js"></script>
 </body>

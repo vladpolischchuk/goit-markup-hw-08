@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8" />
@@ -17,7 +17,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Стилі CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -37,27 +39,36 @@
     <div class="container page-header__container">
 
       <!-- Логотип сайту -->
-      <a class="logo link" href="./index.html" lang="en">Web<span class="logo__dark">Studio</span></a>
+      <a class="logo link" href="./index.html" lang="en" aria-label="Логотип сайту">Web<span
+          class="logo__dark">Studio</span></a>
 
       <!-- Навігація -->
       <nav class="nav page-header__nav">
 
+        <!-- Гамбургер -->
+        <button class="nav-button" type="button" aria-controls="menu-container" aria-expanded="false" data-menu-button>
+          <svg width="24" height="19" aria-label="Перемикач мобільного меню">
+            <use class="icon-cross" href="./images/sprits/menu/gamburger.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/sprits/menu/gamburger.svg#icon-menu"></use>
+          </svg>
+        </button>
+
         <!-- Спливаюче меню -->
-        <div class="nav__thumb" data-menu>
+        <div class="nav__thumb" id="menu-container" data-menu>
 
           <!-- Елементи навігації -->
           <ul class="nav__list list">
 
             <li class="nav__item">
-              <a class="nav__link nav__link--active link" href="./index.html">Студия</a>
+              <a class="nav__link nav__link--active link" href="./index.html">Студія</a>
             </li>
 
             <li class="nav__item">
-              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
             </li>
 
             <li class="nav__item">
-              <a class="nav__link link" href="">Контакты</a>
+              <a class="nav__link link" href="">Контакти</a>
             </li>
 
           </ul>
@@ -66,7 +77,8 @@
           <ul class="header-contacts list">
 
             <li class="header-contacts__item">
-              <a class="header-contacts__phone link" href="tel:+380961111111">
+              <a class="header-contacts__phone link" href="tel:+380961111111" target="_blank" rel="noreferrer noopener"
+                aria-label="Номер телефону">
                 <svg class="header-contacts__icon" width="10" height="16">
                   <use href="./images/sprits/sprite.svg#phone"></use>
                 </svg>
@@ -75,7 +87,8 @@
             </li>
 
             <li class="header-contacts__item">
-              <a class="header-contacts__email link" href="mailto:info@devstudio.com">
+              <a class="header-contacts__email link" href="mailto:info@devstudio.com" target="_blank"
+                rel="noreferrer noopener" aria-label="E-mail сайту">
                 <svg class="header-contacts__icon" width="16" height="12">
                   <use href="./images/sprits/sprite.svg#mail"></use>
                 </svg>
@@ -89,31 +102,28 @@
           <ul class="header-networks list">
 
             <li class="header-networks__item">
-              <a class="header-networks__link link link--margin-not" href="">Instagram</a>
+              <a class="header-networks__link link link--margin-not" href="https://www.instagram.com/" target="_blank"
+                rel="noopener noreferrer">Instagram</a>
             </li>
 
             <li class="header-networks__item">
-              <a class="header-networks__link link" href="">Twitter</a>
+              <a class="header-networks__link link" href="https://twitter.com/?lang=uk" target="_blank"
+                rel="noopener noreferrer">Twitter</a>
             </li>
 
             <li class="header-networks__item">
-              <a class="header-networks__link link" href="">Facebook</a>
+              <a class="header-networks__link link" href="https://www.facebook.com/" target="_blank"
+                rel="noopener noreferrer">Facebook</a>
             </li>
 
             <li class="header-networks__item">
-              <a class="header-networks__link link" href="">LinkedIn</a>
+              <a class="header-networks__link link" href="https://www.linkedin.com/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
             </li>
 
           </ul>
         </div>
 
-        <!-- Гамбургер -->
-        <button class="nav-button" type="button" data-menu-button aria-expanded="false">
-          <svg width="24" height="19">
-            <use class="icon-cross" href="./images/sprits/menu/gamburger.svg#icon-close"></use>
-            <use class="icon-menu" href="./images/sprits/menu/gamburger.svg#icon-menu"></use>
-          </svg>
-        </button>
       </nav>
 
 
@@ -128,8 +138,8 @@
 
       <div class="container">
 
-        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button button--animation" type="button" data-modal-open>Заказать услугу</button>
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="button button--animation" type="button" data-modal-open>Замовити послугу</button>
       </div>
 
     </section>
@@ -139,7 +149,7 @@
       <div class="container">
 
         <!-- Заголовок секції -->
-        <h2 class="title section__title" hidden>Особенности</h2>
+        <h2 class="title section__title" hidden>Особливості</h2>
 
         <!-- Список особливостей -->
         <ul class="grid list">
@@ -154,9 +164,9 @@
             </div>
 
             <!-- Опис особливостей -->
-            <h3 class="features__subtitle">Внимание к деталям</h3>
-            <p class="features__description">Идейные соображения, а также начало повседневной работы по формированию
-              позиции.
+            <h3 class="features__subtitle">Увага до деталей</h3>
+            <p class="features__description">Ідейні міркування, а також початок повсякденної роботи з формування
+              позиції.
             </p>
           </li>
 
@@ -170,9 +180,9 @@
             </div>
 
             <!-- Опис особливостей -->
-            <h3 class="features__subtitle">Пунктуальность</h3>
+            <h3 class="features__subtitle">Пунктуальність</h3>
             <p class="features__description">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              Завдання організації, особливо рамки та місце навчання кадрів тягне за собою.
             </p>
           </li>
 
@@ -186,9 +196,9 @@
             </div>
 
             <!-- Опис особливостей -->
-            <h3 class="features__subtitle">Планирование</h3>
+            <h3 class="features__subtitle">Планування</h3>
             <p class="features__description">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
+              Таким же образом консультація з широким активом в значній мірі обумовлює.
             </p>
           </li>
 
@@ -202,9 +212,9 @@
             </div>
 
             <!-- Опис особливостей -->
-            <h3 class="features__subtitle">Современные технологии</h3>
-            <p class="features__description">Значимость этих проблем настолько очевидна, что реализация плановых
-              заданий.</p>
+            <h3 class="features__subtitle">Сучасні технології</h3>
+            <p class="features__description">Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.</p>
           </li>
 
         </ul>
@@ -216,7 +226,7 @@
       <div class="container">
 
         <!-- Заголовок секції -->
-        <h2 class="title section__title">Чем мы занимаемся</h2>
+        <h2 class="title section__title">Чим ми займаємося</h2>
 
         <!-- Список того що ми робимо -->
         <ul class="grid list">
@@ -226,11 +236,11 @@
               <source srcset="./images/our-work/WebP/codings.webp 320w, ./images/our-work/WebP/codings-2x.webp 740w" />
 
               <img class="img" srcset="./images/our-work/codings.jpg 370w, ./images/our-work/codings-2x.jpg 740w"
-                src="./images/our-work/codings.jpg" alt="Десктопные приложения"
-                sizes="(min-width: 960) 25vw, (min-width: 960) 50vw, (min-width: 960) 100vw" />
+                src="./images/our-work/codings.jpg" alt="Десктопні додатки"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
             </picture>
             <div class="our-work__thumb">
-              <h3 class="our-work__subtitle">Десктопные приложения</h3>
+              <h3 class="our-work__subtitle">Десктопні додатки</h3>
             </div>
           </li>
 
@@ -239,11 +249,11 @@
               <source srcset="./images/our-work/WebP/phone.webp 320w, ./images/our-work/WebP/phone-2x.webp 740w" />
 
               <img class="img" srcset="./images/our-work/phone.jpg 370w, ./images/our-work/phone-2x.jpg 740w"
-                src="./images/our-work/phone.jpg" alt="Мобильные приложения"
-                sizes="(min-width: 960) 25vw, (min-width: 960) 50vw, (min-width: 960) 100vw" />
+                src="./images/our-work/phone.jpg" alt="Мобільні додатки"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
             </picture>
             <div class="our-work__thumb">
-              <h3 class="our-work__subtitle">Мобильные приложения</h3>
+              <h3 class="our-work__subtitle">Мобільні додатки</h3>
             </div>
           </li>
 
@@ -252,11 +262,11 @@
               <source srcset="./images/our-work/WebP/colors.webp 320w, ./images/our-work/WebP/colors-2x.webp 740w" />
 
               <img class="img" srcset="./images/our-work/colors.jpg 370w, ./images/our-work/colors-2x.jpg 740w"
-                src="./images/our-work/colors.jpg" alt="Дизайнерские решения"
-                sizes="(min-width: 960) 25vw, (min-width: 960) 50vw, (min-width: 960) 100vw" />
+                src="./images/our-work/colors.jpg" alt="Дизайнерські рішення"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
             </picture>
             <div class="our-work__thumb">
-              <h3 class="our-work__subtitle">Дизайнерские решения</h3>
+              <h3 class="our-work__subtitle">Дизайнерські рішення</h3>
             </div>
           </li>
         </ul>
@@ -278,29 +288,35 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/mobile/WebP/igor-450.webp 450w,
                 ./images/team/tablet/WebP/igor-354.webp 354w,
-                ./images/team/tablet/WebP/igor-354-2x.webp 708w,  
+                ./images/team/PC/WebP/igor-270.webp 270w,
+                ./images/team/mobile/WebP/igor-450.webp 450w,
+                ./images/team/tablet/WebP/igor-354-2x.webp 708w,
+                ./images/team/PC/WebP/igor-270-2x.webp 540w,  
                 ./images/team/mobile/WebP/igor-450-2x.webp 900w" />
 
               <img class="img" srcset="
+                ./images/team/tablet/igor-354.jpg 354w, 
+                ./images/team/PC/igor-270.jpg 270w, 
                 ./images/team/mobile/igor-450.jpg 450w,
-                ./images/team/tablet/igor-354.jpg 354w,  
-                ./images/team/tablet/igor-354-2x.jpg 708w,   
+                ./images/team/tablet/igor-354-2x.jpg 708w,
+                ./images/team/PC/igor-270-2x.jpg 540w,   
                 ./images/team/mobile/igor-450-2x.jpg 900w" src="./images/team/mobile/igor-450.jpg"
-                alt="Игорь Демьяненко - Product Designer" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+                alt="Ігор Дем'яненко - Product Designer"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
             </picture>
 
             <!-- Опис члена команди -->
             <div class="team__article">
-              <h3 class="team__subtitle">Игорь Демьяненко</h3>
+              <h3 class="team__subtitle">Ігор Дем'яненко</h3>
               <p class="team__description" lang="en">Product Designer</p>
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="instagram">
+                  <a class="social__link link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="instagram">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#instagram"></use>
                     </svg>
@@ -308,7 +324,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="twitter">
+                  <a class="social__link link" href="https://twitter.com/?lang=uk" target="_blank"
+                    rel="noopener noreferrer" aria-label="twitter">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#twitter"></use>
                     </svg>
@@ -316,7 +333,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="facebook">
+                  <a class="social__link link" href="https://www.facebook.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="facebook">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#facebook"></use>
                     </svg>
@@ -324,7 +342,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="linkedin">
+                  <a class="social__link link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="linkedin">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#linkedin"></use>
                     </svg>
@@ -339,29 +358,35 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/mobile/WebP/olga-450.webp 450w,
                 ./images/team/tablet/WebP/olga-354.webp 354w,
-                ./images/team/tablet/WebP/olga-354-2x.webp 708w,   
+                ./images/team/PC/WebP/olga-270.webp 270w,
+                ./images/team/mobile/WebP/olga-450.webp 450w,
+                ./images/team/tablet/WebP/olga-354-2x.webp 708w,
+                 ./images/team/PC/WebP/olga-270-2x.webp 540w,    
                 ./images/team/mobile/WebP/olga-450-2x.webp 900w" />
 
               <img class="img" srcset="
+                ./images/team/tablet/olga-354.jpg 354w, 
+                ./images/team/PC/olga-270.jpg 270w,  
                 ./images/team/mobile/olga-450.jpg 450w,
-                ./images/team/tablet/olga-354.jpg 354w,  
-                ./images/team/tablet/olga-354-2x.jpg 708w,   
+                ./images/team/tablet/olga-354-2x.jpg 708w,
+                ./images/team/PC/olga-270-2x.jpg 540w,    
                 /images/team/mobile/olga-450-2x.jpg 900w" src="./images/team/mobile/olga-450.jpg"
-                alt="Ольга Репина - Frontend Developer" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+                alt="Ольга Рєпіна - Frontend Developer"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
             </picture>
 
             <!-- Опис члена команди -->
             <div class="team__article">
-              <h3 class="team__subtitle">Ольга Репина</h3>
+              <h3 class="team__subtitle">Ольга Рєпіна</h3>
               <p class="team__description" lang="en">Frontend Developer</p>
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="instagram">
+                  <a class="social__link link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="instagram">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#instagram"></use>
                     </svg>
@@ -369,7 +394,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="twitter">
+                  <a class="social__link link" href="https://twitter.com/?lang=uk" target="_blank"
+                    rel="noopener noreferrer" aria-label="twitter">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#twitter"></use>
                     </svg>
@@ -377,7 +403,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="facebook">
+                  <a class="social__link link" href="https://www.facebook.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="facebook">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#facebook"></use>
                     </svg>
@@ -385,13 +412,13 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="linkedin">
+                  <a class="social__link link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="linkedin">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>
-
               </ul>
 
             </div>
@@ -401,29 +428,34 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/mobile/WebP/nykolay-450.webp 450w,
                 ./images/team/tablet/WebP/nykolay-354.webp 354w,
-                ./images/team/tablet/WebP/nykolay-354-2x.webp 708w,    
+                ./images/team/PC/WebP/nykolay-270.webp 270w,
+                ./images/team/mobile/WebP/nykolay-450.webp 450w,
+                ./images/team/tablet/WebP/nykolay-354-2x.webp 708w,
+                ./images/team/PC/WebP/nykolay-270-2x.webp 540w,      
                 ./images/team/mobile/WebP/nykolay-450-2x.webp 900w" />
 
               <img class="img" srcset="
+                ./images/team/tablet/nykolay-354.jpg 354w, 
+                ./images/team/PC/nykolay-270.jpg 270w, 
                 ./images/team/mobile/nykolay-450.jpg 450w,
-                ./images/team/tablet/nykolay-354.jpg 354w,  
-                ./images/team/tablet/nykolay-354-2x.jpg 708w,  
+                ./images/team/tablet/nykolay-354-2x.jpg 708w,
+                ./images/team/PC/nykolay-270-2x.jpg 540w,     
                 ./images/team/mobile/nykolay-450-2x.jpg 900w" src="./images/team/mobile/nykolay-450.jpg"
-                alt="Николай Тарасов - Marketingr" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+                alt="Микола Тарасов - Marketingr" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
             </picture>
 
             <!-- Опис члена команди -->
             <div class="team__article">
-              <h3 class="team__subtitle">Николай Тарасов</h3>
+              <h3 class="team__subtitle">Микола Тарасов</h3>
               <p class="team__description" lang="en">Marketingr</p>
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="instagram">
+                  <a class="social__link link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="instagram">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#instagram"></use>
                     </svg>
@@ -431,7 +463,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="twitter">
+                  <a class="social__link link" href="https://twitter.com/?lang=uk" target="_blank"
+                    rel="noopener noreferrer" aria-label="twitter">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#twitter"></use>
                     </svg>
@@ -439,7 +472,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="facebook">
+                  <a class="social__link link" href="https://www.facebook.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="facebook">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#facebook"></use>
                     </svg>
@@ -447,13 +481,13 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="linkedin">
+                  <a class="social__link link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="linkedin">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>
-
               </ul>
 
             </div>
@@ -463,29 +497,34 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/mobile/WebP/michael-450.webp 450w,
                 ./images/team/tablet/WebP/michael-354.webp 354w,
-                ./images/team/tablet/WebP/michael-354-2x.webp 708w,     
+                ./images/team/PC/WebP/michael-270.webp 270w,
+                ./images/team/mobile/WebP/michael-450.webp 450w,
+                ./images/team/tablet/WebP/michael-354-2x.webp 708w,  
+                ./images/team/PC/WebP/michael-270-2x.webp 540w,     
                 ./images/team/mobile/WebP/michael-450-2x.webp 900w" />
 
               <img class="img" srcset="
+                ./images/team/tablet/michael-354.jpg 354w,
+                ./images/team/PC/michael-270.jpg 270w, 
                 ./images/team/mobile/michael-450.jpg 450w,
-                ./images/team/tablet/michael-354.jpg 354w,  
-                ./images/team/tablet/michael-354-2x.jpg 708w,  
+                ./images/team/tablet/michael-354-2x.jpg 708w,
+                ./images/team/PC/michael-270-2x.jpg 540w,     
                 ./images/team/mobile/michael-450-2x.jpg 900w" src="./images/team/mobile/michael-450.jpg"
-                alt="Михаил Ермаков - UI Designer" sizes="(min-width: 960) 25vw, (min-width: 576) 50vw, 90vw" />
+                alt="Михайло Єрмаков - UI Designer" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
             </picture>
 
             <!-- Опис члена команди -->
             <div class="team__article">
-              <h3 class="team__subtitle">Михаил Ермаков</h3>
+              <h3 class="team__subtitle">Михайло Єрмаков</h3>
               <p class="team__description" lang="en">UI Designer</p>
 
               <!-- Соціальні мережі члена команди -->
               <ul class="social list">
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="instagram">
+                  <a class="social__link link" href="https://www.instagram.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="instagram">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#instagram"></use>
                     </svg>
@@ -493,7 +532,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="twitter">
+                  <a class="social__link link" href="https://twitter.com/?lang=uk" target="_blank"
+                    rel="noopener noreferrer" aria-label="twitter">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#twitter"></use>
                     </svg>
@@ -501,7 +541,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="facebook">
+                  <a class="social__link link" href="https://www.facebook.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="facebook">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#facebook"></use>
                     </svg>
@@ -509,7 +550,8 @@
                 </li>
 
                 <li class="social__item">
-                  <a class="social__link link" href="" aria-label="linkedin">
+                  <a class="social__link link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="linkedin">
                     <svg class="social__icon">
                       <use href="./images/sprits/sprite.svg#linkedin"></use>
                     </svg>
@@ -519,6 +561,7 @@
               </ul>
 
             </div>
+
           </li>
 
         </ul>
@@ -529,13 +572,13 @@
     <section class="section clients">
       <div class="container">
         <!-- Заголовок секції -->
-        <h2 class="title section__title">Постоянные клиенты</h2>
+        <h2 class="title section__title">Постійні клієнти</h2>
 
         <!-- Список клієнтів -->
         <ul class="grid list">
 
           <li class="clients__item grid__item">
-            <a class="clients__link" href="#">
+            <a class="clients__link" href="" aria-label="YA & CO">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#ya-co"></use>
               </svg>
@@ -543,7 +586,7 @@
           </li>
 
           <li class="clients__item grid__item">
-            <a class="clients__link" href="#">
+            <a class="clients__link" href="" aria-label="Company Tagline Here">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#tagline-here"></use>
               </svg>
@@ -551,23 +594,23 @@
           </li>
 
           <li class="clients__item grid__item">
-            <a class="clients__link" href="#">
-              <svg class="clients__icon">
+            <a class="clients__link" href="" aria-label="COMPANY">
+              <svg class=" clients__icon">
                 <use href="./images/sprits/sprite.svg#company"></use>
               </svg>
             </a>
           </li>
 
           <li class="clients__item grid__item">
-            <a class="clients__link" href="#">
-              <svg class="clients__icon">
+            <a class="clients__link" href="" aria-label="Foster Peters">
+              <svg class=" clients__icon">
                 <use href="./images/sprits/sprite.svg#foster-peters"></use>
               </svg>
             </a>
           </li>
 
           <li class="clients__item grid__item">
-            <a class="clients__link" href="#">
+            <a class="clients__link" href="" aria-label="Brand">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#brand"></use>
               </svg>
@@ -575,7 +618,7 @@
           </li>
 
           <li class="clients__item grid__item">
-            <a class="clients__link" href="#">
+            <a class="clients__link" href="" aria-label="Company Tag Line">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#company-tag-line"></use>
               </svg>
@@ -596,23 +639,26 @@
       <div class="page-footer__group">
         <div>
           <!-- Логотип студії -->
-          <a class="logo link" href="./portfolio.html" lang="en">Web<span class="logo__white">Studio</span></a>
+          <a class="logo link" href="./portfolio.html" lang="en" aria-label="Логотип сайту">Web<span
+              class="logo__white">Studio</span></a>
 
           <!-- Контактна інформація -->
           <address class="page-footer__contacts">
 
             <a class="address-link link" href="https://goo.gl/maps/VuXHW9RfUU25sTvL6" target="_blank"
-              rel="noreferrer noopener">г.
-              Киев, пр-т Леси
-              Украинки, 26</a>
+              rel="noreferrer noopener" aria-label="Адреса сайту">м.
+              Київ, пр-т Лесі
+              Українки, 26</a>
 
             <!-- Список контактів -->
             <ul class="footer-contacts list">
               <li class="footer-contacts__item">
-                <a class="footer-contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer-contacts__link link" href="mailto:info@devstudio.com" target="_blank"
+                  rel="noreferrer noopener" aria-label="E-mail сайту">info@devstudio.com</a>
               </li>
               <li class="footer-contacts__item">
-                <a class="footer-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="footer-contacts__link link" href="tel:+380961111111" target="_blank" rel="noreferrer noopener"
+                  aria-label="Номер телефону сайту">+38 096 111 11 11</a>
               </li>
             </ul>
 
@@ -623,13 +669,14 @@
         <!-- Соціальні мережі студії -->
         <div class="social-networks page-footer__social-networks">
           <!-- Заголовок футера -->
-          <h3 class="page-footer__subtitle">присоединяйтесь</h3>
+          <h3 class="page-footer__subtitle">приєднуйтесь</h3>
 
           <!-- Список соціальних мереж -->
           <ul class="social list">
 
             <li class="social__item">
-              <a class="social__link link social__link--dark" href="" aria-label="instagram">
+              <a class="social__link link social__link--dark" href="https://www.instagram.com/" target="_blank"
+                rel="noopener noreferrer" aria-label="instagram">
                 <svg class="social__icon">
                   <use href="./images/sprits/sprite.svg#instagram"></use>
                 </svg>
@@ -637,7 +684,8 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link link social__link--dark" href="" aria-label="twitter">
+              <a class="social__link link social__link--dark" href="https://twitter.com/?lang=uk" target="_blank"
+                rel="noopener noreferrer" aria-label="twitter">
                 <svg class="social__icon">
                   <use href="./images/sprits/sprite.svg#twitter"></use>
                 </svg>
@@ -645,7 +693,8 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link link social__link--dark" href="" aria-label="facebook">
+              <a class="social__link link social__link--dark" href="https://www.facebook.com/" target="_blank"
+                rel="noopener noreferrer" aria-label="facebook">
                 <svg class="social__icon">
                   <use href="./images/sprits/sprite.svg#facebook"></use>
                 </svg>
@@ -653,7 +702,8 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link link social__link--dark" href="" aria-label="linkedin">
+              <a class="social__link link social__link--dark" href="https://www.linkedin.com/" target="_blank"
+                rel="noopener noreferrer" aria-label="linkedin">
                 <svg class="social__icon">
                   <use href="./images/sprits/sprite.svg#linkedin"></use>
                 </svg>
@@ -668,16 +718,16 @@
       <!-- Форма підписки на розсилку -->
       <form class="subscription page-footer__subscription">
         <!-- Заголовок футера -->
-        <h3 class="page-footer__subtitle" id="subscription-form">Подпишитесь на рассылку</h3>
+        <h3 class="page-footer__subtitle" id="subscription-form">Підпишіться на розсилку</h3>
 
         <div class="subscription__group" role="group" aria-labelledby="subscription-form">
 
           <!-- Поле для введення email -->
-          <input class="subscription__input" type="email" name="email" placeholder="E-mail">
+          <input class="subscription__input" type="email" name="email" placeholder="E-mail" required>
 
           <!-- Кнопка відправки форми -->
           <button class="subscription__btn button" type="submit">
-            Подписаться
+            Підписатися
             <!-- Картинка кнопки -->
             <svg class="subscription__icon" width="24" height="24">
               <use href="./images/sprits/modal-window/icons.svg#icon-send"></use>
@@ -703,12 +753,12 @@
 
       <!-- Форма замовлення послуги -->
       <form class="form">
-        <h3 class="form__title title">Оставьте свои данные, мы вам перезвоним</h3>
+        <h3 class="form__title title">Залиште свої дані, ми вам передзвонимо</h3>
 
         <!-- Дані замовника -->
         <label class="form__label">
-          Имя
-          <input class="form__input" type="text" name="name">
+          Ім'я
+          <input class="form__input" type="text" name="name" required>
           <svg class="form__icon" width="18" height="18">
             <use href="./images/sprits/modal-window/icons.svg#icon-person"></use>
           </svg>
@@ -716,15 +766,15 @@
 
         <label class="form__label">
           Телефон
-          <input class="form__input" type="text" name="tel">
+          <input class="form__input" type="text" name="tel" required>
           <svg class="form__icon" width="18" height="18">
             <use href="./images/sprits/modal-window/icons.svg#icon-phone"></use>
           </svg>
         </label>
 
         <label class="form__label">
-          Почта
-          <input class="form__input" type="text" name="email">
+          Пошта
+          <input class="form__input" type="text" name="email" required>
           <svg class="form__icon" width="18" height="18">
             <use href="./images/sprits/modal-window/icons.svg#icon-email"></use>
           </svg>
@@ -732,8 +782,8 @@
 
         <!-- Коментар,побажання замвоника -->
         <label class="form__label">
-          Комментарий
-          <textarea class="form__coment" name="coment" rows="5" placeholder="Введите текст"></textarea>
+          Коментар
+          <textarea class="form__coment" name="coment" rows="5" placeholder="Введіть текст"></textarea>
         </label>
 
         <!-- Політика приватності(чекбокс) -->
@@ -742,14 +792,14 @@
           <label class="checkbox__label">
             <input class="checkbox__input visually-hidden" type="checkbox">
             <span class="checkbox__icon"></span>
-            Соглашаюсь с рассылкой и принимаю
+            Погоджуюся з розсилкою і приймаю
             <a class="checkbox__link" href="">
-              Условия договора
+              Умови договору
             </a>
           </label>
 
           <!-- Кнопка відправки форми -->
-          <button class="button" type="submit">Отправить</button>
+          <button class="button" type="submit">Відправити</button>
         </div>
 
       </form>
