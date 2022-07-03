@@ -233,11 +233,12 @@
 
           <li class="our-work__item grid__item">
             <picture>
-              <source srcset="./images/our-work/WebP/codings.webp 320w, ./images/our-work/WebP/codings-2x.webp 740w" />
+              <source srcset="./images/our-work/WebP/codings.webp 370w, ./images/our-work/WebP/codings-2x.webp 740w"
+                media="(min-width: 1200px)" type="image/webp" sizes="(min-width: 1200px) 33vw" />
+              <source srcset="./images/our-work/codings.jpg 370w, ./images/our-work/codings-2x.jpg 740w"
+                media="(min-width: 1200px)" type="image/jpeg" sizes="(min-width: 1200px) 33vw" />
 
-              <img class="img" srcset="./images/our-work/codings.jpg 370w, ./images/our-work/codings-2x.jpg 740w"
-                src="./images/our-work/codings.jpg" alt="Десктопні додатки"
-                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+              <img class="img" src="./images/our-work/codings.jpg" alt="Десктопні додатки" />
             </picture>
             <div class="our-work__thumb">
               <h3 class="our-work__subtitle">Десктопні додатки</h3>
@@ -246,11 +247,12 @@
 
           <li class="our-work__item grid__item">
             <picture>
-              <source srcset="./images/our-work/WebP/phone.webp 320w, ./images/our-work/WebP/phone-2x.webp 740w" />
+              <source srcset="./images/our-work/WebP/phone.webp 370w, ./images/our-work/WebP/phone-2x.webp 740w"
+                media="(min-width: 1200px)" type="image/webp" sizes="(min-width: 1200px) 33vw" />
+              <source srcset="./images/our-work/phone.jpg 370w, ./images/our-work/phone-2x.jpg 740w"
+                media="(min-width: 1200px)" type="image/jpeg" sizes="(min-width: 1200px) 33vw" />
 
-              <img class="img" srcset="./images/our-work/phone.jpg 370w, ./images/our-work/phone-2x.jpg 740w"
-                src="./images/our-work/phone.jpg" alt="Мобільні додатки"
-                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+              <img class="img" src="./images/our-work/phone.jpg" alt="Мобільні додатки" />
             </picture>
             <div class="our-work__thumb">
               <h3 class="our-work__subtitle">Мобільні додатки</h3>
@@ -259,7 +261,10 @@
 
           <li class="our-work__item grid__item">
             <picture>
-              <source srcset="./images/our-work/WebP/colors.webp 320w, ./images/our-work/WebP/colors-2x.webp 740w" />
+              <source srcset="./images/our-work/WebP/colors.webp 370w, ./images/our-work/WebP/colors-2x.webp 740w"
+                media="(min-width: 1200px)" type="image/webp" sizes="(min-width: 1200px) 33vw" />
+              <source srcset="./images/our-work/colors.jpg 370w, ./images/our-work/colors-2x.jpg 740w"
+                media="(min-width: 1200px)" type="image/jpeg" sizes="(min-width: 1200px) 33vw" />
 
               <img class="img" srcset="./images/our-work/colors.jpg 370w, ./images/our-work/colors-2x.jpg 740w"
                 src="./images/our-work/colors.jpg" alt="Дизайнерські рішення"
@@ -288,22 +293,33 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/tablet/WebP/igor-354.webp 354w,
                 ./images/team/PC/WebP/igor-270.webp 270w,
+                ./images/team/PC/WebP/igor-270-2x.webp 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/WebP/igor-354.webp 354w,
+                ./images/team/tablet/WebP/igor-354-2x.webp 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/WebP/igor-450.webp 450w,
-                ./images/team/tablet/WebP/igor-354-2x.webp 708w,
-                ./images/team/PC/WebP/igor-270-2x.webp 540w,  
-                ./images/team/mobile/WebP/igor-450-2x.webp 900w" />
+                ./images/team/mobile/WebP/igor-450-2x.webp 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
 
-              <img class="img" srcset="
-                ./images/team/tablet/igor-354.jpg 354w, 
+
+              <source srcset="
                 ./images/team/PC/igor-270.jpg 270w, 
+                ./images/team/PC/igor-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/igor-354.jpg 354w,
+                ./images/team/tablet/igor-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/igor-450.jpg 450w,
-                ./images/team/tablet/igor-354-2x.jpg 708w,
-                ./images/team/PC/igor-270-2x.jpg 540w,   
-                ./images/team/mobile/igor-450-2x.jpg 900w" src="./images/team/mobile/igor-450.jpg"
-                alt="Ігор Дем'яненко - Product Designer"
-                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/team/mobile/igor-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
+
+              <img class="img" src="./images/team/mobile/igor-450.jpg" alt="Ігор Дем'яненко - Product Designer" />
             </picture>
 
             <!-- Опис члена команди -->
@@ -358,22 +374,33 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/tablet/WebP/olga-354.webp 354w,
                 ./images/team/PC/WebP/olga-270.webp 270w,
+                ./images/team/PC/WebP/olga-270-2x.webp 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/WebP/olga-354.webp 354w,
+                ./images/team/tablet/WebP/olga-354-2x.webp 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/WebP/olga-450.webp 450w,
-                ./images/team/tablet/WebP/olga-354-2x.webp 708w,
-                 ./images/team/PC/WebP/olga-270-2x.webp 540w,    
-                ./images/team/mobile/WebP/olga-450-2x.webp 900w" />
+                ./images/team/mobile/WebP/olga-450-2x.webp 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
 
-              <img class="img" srcset="
-                ./images/team/tablet/olga-354.jpg 354w, 
-                ./images/team/PC/olga-270.jpg 270w,  
+
+              <source srcset="
+                ./images/team/PC/olga-270.jpg 270w, 
+                ./images/team/PC/olga-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/olga-354.jpg 354w,
+                ./images/team/tablet/olga-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/olga-450.jpg 450w,
-                ./images/team/tablet/olga-354-2x.jpg 708w,
-                ./images/team/PC/olga-270-2x.jpg 540w,    
-                /images/team/mobile/olga-450-2x.jpg 900w" src="./images/team/mobile/olga-450.jpg"
-                alt="Ольга Рєпіна - Frontend Developer"
-                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/team/mobile/olga-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
+
+              <img class="img" src="./images/team/mobile/olga-450.jpg" alt="Ольга Рєпіна - Frontend Developer" />
             </picture>
 
             <!-- Опис члена команди -->
@@ -428,21 +455,33 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/tablet/WebP/nykolay-354.webp 354w,
                 ./images/team/PC/WebP/nykolay-270.webp 270w,
+                ./images/team/PC/WebP/nykolay-270-2x.webp 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/WebP/nykolay-354.webp 354w,
+                ./images/team/tablet/WebP/nykolay-354-2x.webp 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/WebP/nykolay-450.webp 450w,
-                ./images/team/tablet/WebP/nykolay-354-2x.webp 708w,
-                ./images/team/PC/WebP/nykolay-270-2x.webp 540w,      
-                ./images/team/mobile/WebP/nykolay-450-2x.webp 900w" />
+                ./images/team/mobile/WebP/nykolay-450-2x.webp 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
 
-              <img class="img" srcset="
-                ./images/team/tablet/nykolay-354.jpg 354w, 
+
+              <source srcset="
                 ./images/team/PC/nykolay-270.jpg 270w, 
+                ./images/team/PC/nykolay-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/nykolay-354.jpg 354w,
+                ./images/team/tablet/nykolay-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/nykolay-450.jpg 450w,
-                ./images/team/tablet/nykolay-354-2x.jpg 708w,
-                ./images/team/PC/nykolay-270-2x.jpg 540w,     
-                ./images/team/mobile/nykolay-450-2x.jpg 900w" src="./images/team/mobile/nykolay-450.jpg"
-                alt="Микола Тарасов - Marketingr" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/team/mobile/nykolay-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
+
+              <img class="img" src="./images/team/mobile/nykolay-450.jpg" alt="Микола Тарасов - Marketingr" />
             </picture>
 
             <!-- Опис члена команди -->
@@ -497,21 +536,33 @@
             <!-- Фото -->
             <picture>
               <source srcset="
-                ./images/team/tablet/WebP/michael-354.webp 354w,
                 ./images/team/PC/WebP/michael-270.webp 270w,
+                ./images/team/PC/WebP/michael-270-2x.webp 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/WebP/michael-354.webp 354w,
+                ./images/team/tablet/WebP/michael-354-2x.webp 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/WebP/michael-450.webp 450w,
-                ./images/team/tablet/WebP/michael-354-2x.webp 708w,  
-                ./images/team/PC/WebP/michael-270-2x.webp 540w,     
-                ./images/team/mobile/WebP/michael-450-2x.webp 900w" />
+                ./images/team/mobile/WebP/michael-450-2x.webp 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
 
-              <img class="img" srcset="
-                ./images/team/tablet/michael-354.jpg 354w,
+
+              <source srcset="
                 ./images/team/PC/michael-270.jpg 270w, 
+                ./images/team/PC/michael-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                ./images/team/tablet/michael-354.jpg 354w,
+                ./images/team/tablet/michael-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                media="(min-width: 768px)" />
+              <source srcset="
                 ./images/team/mobile/michael-450.jpg 450w,
-                ./images/team/tablet/michael-354-2x.jpg 708w,
-                ./images/team/PC/michael-270-2x.jpg 540w,     
-                ./images/team/mobile/michael-450-2x.jpg 900w" src="./images/team/mobile/michael-450.jpg"
-                alt="Михайло Єрмаков - UI Designer" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                ./images/team/mobile/michael-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                media="(max-width: 767px)" />
+
+              <img class="img" src="./images/team/mobile/michael-450.jpg" alt="Михайло Єрмаков - UI Designer" />
             </picture>
 
             <!-- Опис члена команди -->
