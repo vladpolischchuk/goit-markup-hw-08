@@ -15,7 +15,6 @@
 
   <!-- Анімація -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <!-- Стилі CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -138,8 +137,10 @@
 
       <div class="container">
 
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button button--animation" type="button" data-modal-open>Замовити послугу</button>
+        <h1 class="hero__title" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Ефективні
+          рішення для вашого бізнесу</h1>
+        <button class="button button--animation" type="button" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">Замовити послугу</button>
       </div>
 
     </section>
@@ -154,7 +155,8 @@
         <!-- Список особливостей -->
         <ul class="grid list">
 
-          <li class="features__item grid__item">
+          <li class="features__item grid__item" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+            data-aos-delay="300">
 
             <!-- Картинка -->
             <div class="features__wrapper">
@@ -170,7 +172,8 @@
             </p>
           </li>
 
-          <li class="features__item grid__item">
+          <li class="features__item grid__item" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+            data-aos-delay="600">
 
             <!-- Картинка -->
             <div class="features__wrapper">
@@ -186,7 +189,8 @@
             </p>
           </li>
 
-          <li class="features__item grid__item">
+          <li class="features__item grid__item" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+            data-aos-delay="900">
 
             <!-- Картинка -->
             <div class="features__wrapper">
@@ -202,7 +206,8 @@
             </p>
           </li>
 
-          <li class="features__item grid__item">
+          <li class="features__item grid__item" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+            data-aos-delay="1200">
 
             <!-- Картинка -->
             <div class="features__wrapper">
@@ -226,12 +231,15 @@
       <div class="container">
 
         <!-- Заголовок секції -->
-        <h2 class="title section__title">Чим ми займаємося</h2>
+        <h2 class="title section__title" data-aos="fade-down-right" data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">
+          Чим ми займаємося</h2>
 
         <!-- Список того що ми робимо -->
         <ul class="grid list">
 
-          <li class="our-work__item grid__item">
+          <li class="our-work__item grid__item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            data-aos-delay="300">
             <picture>
               <source srcset="./images/our-work/WebP/codings.webp 370w, ./images/our-work/WebP/codings-2x.webp 740w"
                 media="(min-width: 1200px)" type="image/webp" sizes="(min-width: 1200px) 33vw" />
@@ -245,7 +253,8 @@
             </div>
           </li>
 
-          <li class="our-work__item grid__item">
+          <li class="our-work__item grid__item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            data-aos-delay="600">
             <picture>
               <source srcset="./images/our-work/WebP/phone.webp 370w, ./images/our-work/WebP/phone-2x.webp 740w"
                 media="(min-width: 1200px)" type="image/webp" sizes="(min-width: 1200px) 33vw" />
@@ -259,7 +268,8 @@
             </div>
           </li>
 
-          <li class="our-work__item grid__item">
+          <li class="our-work__item grid__item" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            data-aos-delay="900">
             <picture>
               <source srcset="./images/our-work/WebP/colors.webp 370w, ./images/our-work/WebP/colors-2x.webp 740w"
                 media="(min-width: 1200px)" type="image/webp" sizes="(min-width: 1200px) 33vw" />
@@ -284,12 +294,13 @@
       <div class="container">
 
         <!-- Заголовок секції -->
-        <h2 class="title section__title">Наша команда</h2>
+        <h2 class="title section__title" data-aos="fade-down-left" data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">Наша команда</h2>
 
         <!-- Список нашої команди -->
         <ul class="grid list">
 
-          <li class="team__item grid__item">
+          <li class="team__item grid__item" data-aos="zoom-out" data-aos-easing="ease-out-cubic" data-aos-delay="300">
             <!-- Фото -->
             <picture>
               <source srcset="
@@ -308,15 +319,15 @@
 
               <source srcset="
                 ./images/team/PC/igor-270.jpg 270w, 
-                ./images/team/PC/igor-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                ./images/team/PC/igor-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/jpeg"
                 media="(min-width: 1200px)" />
               <source srcset="
                 ./images/team/tablet/igor-354.jpg 354w,
-                ./images/team/tablet/igor-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                ./images/team/tablet/igor-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/jpeg"
                 media="(min-width: 768px)" />
               <source srcset="
                 ./images/team/mobile/igor-450.jpg 450w,
-                ./images/team/mobile/igor-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                ./images/team/mobile/igor-450-2x.jpg 900w" sizes="100vw" type="image/jpeg"
                 media="(max-width: 767px)" />
 
               <img class="img" src="./images/team/mobile/igor-450.jpg" alt="Ігор Дем'яненко - Product Designer" />
@@ -370,7 +381,7 @@
             </div>
           </li>
 
-          <li class="team__item grid__item">
+          <li class="team__item grid__item" data-aos="zoom-out" data-aos-easing="ease-out-cubic" data-aos-delay="600">
             <!-- Фото -->
             <picture>
               <source srcset="
@@ -389,15 +400,15 @@
 
               <source srcset="
                 ./images/team/PC/olga-270.jpg 270w, 
-                ./images/team/PC/olga-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                ./images/team/PC/olga-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/jpeg"
                 media="(min-width: 1200px)" />
               <source srcset="
                 ./images/team/tablet/olga-354.jpg 354w,
-                ./images/team/tablet/olga-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                ./images/team/tablet/olga-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/jpeg"
                 media="(min-width: 768px)" />
               <source srcset="
                 ./images/team/mobile/olga-450.jpg 450w,
-                ./images/team/mobile/olga-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                ./images/team/mobile/olga-450-2x.jpg 900w" sizes="100vw" type="image/jpeg"
                 media="(max-width: 767px)" />
 
               <img class="img" src="./images/team/mobile/olga-450.jpg" alt="Ольга Рєпіна - Frontend Developer" />
@@ -451,7 +462,7 @@
             </div>
           </li>
 
-          <li class="team__item grid__item">
+          <li class="team__item grid__item" data-aos="zoom-out" data-aos-easing="ease-out-cubic" data-aos-delay="900">
             <!-- Фото -->
             <picture>
               <source srcset="
@@ -470,15 +481,15 @@
 
               <source srcset="
                 ./images/team/PC/nykolay-270.jpg 270w, 
-                ./images/team/PC/nykolay-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                ./images/team/PC/nykolay-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/jpeg"
                 media="(min-width: 1200px)" />
               <source srcset="
                 ./images/team/tablet/nykolay-354.jpg 354w,
-                ./images/team/tablet/nykolay-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                ./images/team/tablet/nykolay-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/jpeg"
                 media="(min-width: 768px)" />
               <source srcset="
                 ./images/team/mobile/nykolay-450.jpg 450w,
-                ./images/team/mobile/nykolay-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                ./images/team/mobile/nykolay-450-2x.jpg 900w" sizes="100vw" type="image/jpeg"
                 media="(max-width: 767px)" />
 
               <img class="img" src="./images/team/mobile/nykolay-450.jpg" alt="Микола Тарасов - Marketingr" />
@@ -532,7 +543,7 @@
             </div>
           </li>
 
-          <li class="team__item grid__item">
+          <li class="team__item grid__item" data-aos="zoom-out" data-aos-easing="ease-out-cubic" data-aos-delay="1200">
             <!-- Фото -->
             <picture>
               <source srcset="
@@ -551,15 +562,15 @@
 
               <source srcset="
                 ./images/team/PC/michael-270.jpg 270w, 
-                ./images/team/PC/michael-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/webp"
+                ./images/team/PC/michael-270-2x.jpg 540w" sizes="(min-width: 1200px) 33vw" type="image/jpeg"
                 media="(min-width: 1200px)" />
               <source srcset="
                 ./images/team/tablet/michael-354.jpg 354w,
-                ./images/team/tablet/michael-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/webp"
+                ./images/team/tablet/michael-354-2x.jpg 708w" sizes="(min-width: 768px) 50vw" type="image/jpeg"
                 media="(min-width: 768px)" />
               <source srcset="
                 ./images/team/mobile/michael-450.jpg 450w,
-                ./images/team/mobile/michael-450-2x.jpg 900w" sizes="100vw" type="image/webp"
+                ./images/team/mobile/michael-450-2x.jpg 900w" sizes="100vw" type="image/jpeg"
                 media="(max-width: 767px)" />
 
               <img class="img" src="./images/team/mobile/michael-450.jpg" alt="Михайло Єрмаков - UI Designer" />
@@ -623,12 +634,13 @@
     <section class="section clients">
       <div class="container">
         <!-- Заголовок секції -->
-        <h2 class="title section__title">Постійні клієнти</h2>
+        <h2 class="title section__title" data-aos="fade-down-right" data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">Постійні клієнти</h2>
 
         <!-- Список клієнтів -->
         <ul class="grid list">
 
-          <li class="clients__item grid__item">
+          <li class="clients__item grid__item" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-delay="200">
             <a class="clients__link" href="" aria-label="YA & CO">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#ya-co"></use>
@@ -636,7 +648,7 @@
             </a>
           </li>
 
-          <li class="clients__item grid__item">
+          <li class="clients__item grid__item" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-delay="400">
             <a class="clients__link" href="" aria-label="Company Tagline Here">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#tagline-here"></use>
@@ -644,7 +656,7 @@
             </a>
           </li>
 
-          <li class="clients__item grid__item">
+          <li class="clients__item grid__item" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-delay="600">
             <a class="clients__link" href="" aria-label="COMPANY">
               <svg class=" clients__icon">
                 <use href="./images/sprits/sprite.svg#company"></use>
@@ -652,7 +664,7 @@
             </a>
           </li>
 
-          <li class="clients__item grid__item">
+          <li class="clients__item grid__item" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-delay="800">
             <a class="clients__link" href="" aria-label="Foster Peters">
               <svg class=" clients__icon">
                 <use href="./images/sprits/sprite.svg#foster-peters"></use>
@@ -660,7 +672,8 @@
             </a>
           </li>
 
-          <li class="clients__item grid__item">
+          <li class="clients__item grid__item" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+            data-aos-delay="1000">
             <a class="clients__link" href="" aria-label="Brand">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#brand"></use>
@@ -668,7 +681,8 @@
             </a>
           </li>
 
-          <li class="clients__item grid__item">
+          <li class="clients__item grid__item" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+            data-aos-delay="1200">
             <a class="clients__link" href="" aria-label="Company Tag Line">
               <svg class="clients__icon">
                 <use href="./images/sprits/sprite.svg#company-tag-line"></use>
@@ -688,7 +702,7 @@
     <div class="container page-footer__container">
 
       <div class="page-footer__group">
-        <div>
+        <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-delay="100">
           <!-- Логотип студії -->
           <a class="logo link" href="./portfolio.html" lang="en" aria-label="Логотип сайту">Web<span
               class="logo__white">Studio</span></a>
@@ -718,7 +732,8 @@
 
 
         <!-- Соціальні мережі студії -->
-        <div class="social-networks page-footer__social-networks">
+        <div class="social-networks page-footer__social-networks" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" data-aos-delay="200">
           <!-- Заголовок футера -->
           <h3 class="page-footer__subtitle">приєднуйтесь</h3>
 
@@ -767,7 +782,8 @@
       </div>
 
       <!-- Форма підписки на розсилку -->
-      <form class="subscription page-footer__subscription">
+      <form class="subscription page-footer__subscription" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" data-aos-delay="200">
         <!-- Заголовок футера -->
         <h3 class="page-footer__subtitle" id="subscription-form">Підпишіться на розсилку</h3>
 
@@ -796,11 +812,13 @@
     <div class="modal">
 
       <!-- Вихід з модального вікна -->
-      <button class="modal__btn-exit" data-modal-close type="button">
-        <svg class="modal__icon-exit" width="11" height="11">
-          <use href="./images/sprits/modal-window/icons.svg#icon-exit"></use>
-        </svg>
-      </button>
+      <div class="modal__wrapper">
+        <button class="modal__btn-exit" data-modal-close type="button">
+          <svg class="modal__icon-exit" width="11" height="11">
+            <use href="./images/sprits/modal-window/icons.svg#icon-exit"></use>
+          </svg>
+        </button>
+      </div>
 
       <!-- Форма замовлення послуги -->
       <form class="form">
@@ -861,6 +879,11 @@
   <script src="./js/preloader.js"></script>
   <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
+
+  <!-- Анімація -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/animations.js"></script>
+
 </body>
 
 </html>
