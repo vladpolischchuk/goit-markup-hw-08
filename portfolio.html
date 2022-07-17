@@ -14,6 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <!-- Анімація -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Стилі CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -34,7 +37,8 @@
 
     <!-- Шапка сайту -->
     <header class="page-header page-header--border">
-        <div class="container page-header__container">
+        <div class="container page-header__container" data-aos="fade-down" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
 
             <!-- Логотип сайту -->
             <a class="logo link" href="./index.html" lang="en" aria-label="Логотип сайту">Web<span
@@ -139,18 +143,33 @@
 
                 <!-- Фільтри для портфоліо -->
                 <ul class="filters list portfolio__filters" aria-label="Список фільтрів для портфоліо">
-                    <li class="filters__item"><button class="filters__btn filters__btn--active btn"
-                            type="button">Все</button></li>
-                    <li class="filters__item"><button class="filters__btn btn" type="button">Веб-сайти</button></li>
-                    <li class="filters__item"><button class="filters__btn btn" type="button">Додатки</button></li>
-                    <li class="filters__item"><button class="filters__btn btn" type="button">Дизайн</button></li>
-                    <li class="filters__item"><button class="filters__btn btn" type="button">Маркетинг</button></li>
+                    <li class="filters__item" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-delay="100">
+                        <button class="filters__btn filters__btn--active btn" type="button">Все</button>
+                    </li>
+                    <li class="filters__item" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-delay="200">
+                        <button class="filters__btn btn" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filters__item" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-delay="300">
+                        <button class="filters__btn btn" type="button">Додатки</button>
+                    </li>
+                    <li class="filters__item" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-delay="400">
+                        <button class="filters__btn btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="filters__item" data-aos="flip-down" data-aos-easing="ease-out-cubic"
+                        data-aos-delay="500">
+                        <button class="filters__btn btn" type="button">Маркетинг</button>
+                    </li>
                 </ul>
 
                 <!-- Список наших робіт -->
                 <ul class="grid product list">
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="100">
                         <a class="product__link link product__link--grow" href=""
                             aria-label="Картка продукту: веб-сайт Технокряк">
                             <div class="product__thumb">
@@ -205,7 +224,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="300">
                         <a class="product__link link" href=""
                             aria-label="Картка продукту: постер New Orlean vs Golden Star">
                             <div class="product__thumb">
@@ -261,7 +281,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="500">
                         <a class="product__link link" href=""
                             aria-label="Картка продукту: додаток для ресторану Seafood">
                             <div class="product__thumb">
@@ -315,7 +336,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="700">
                         <a class="product__link link" href="" aria-label="Картка продукту: проєкт Prime">
                             <div class="product__thumb">
                                 <picture>
@@ -367,7 +389,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="900">
                         <a class="product__link link" href="" aria-label="Картка продукту: додаток Boxes">
                             <div class="product__thumb">
                                 <picture>
@@ -420,7 +443,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="1100">
                         <a class="product__link link" href=""
                             aria-label="Картка продукту: веб-сайт Inspiration has no Borders">
                             <div class="product__thumb">
@@ -475,7 +499,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="1300">
                         <a class="product__link link" href=""
                             aria-label="Картка продукту: дизайн для видання Limited Edition">
                             <div class="product__thumb">
@@ -529,7 +554,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="1500">
                         <a class="product__link link" href="" aria-label="Картка продукту: проэкт LAB">
                             <div class="product__thumb">
                                 <picture>
@@ -581,7 +607,8 @@
                         </a>
                     </li>
 
-                    <li class="grid__item product__item">
+                    <li class="grid__item product__item" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-easing="ease-out-cubic" data-aos-delay="1700">
                         <a class="product__link link" href="" aria-label="Картка продукту: додаток Growing Business">
                             <div class="product__thumb">
                                 <picture>
@@ -646,7 +673,8 @@
         <div class="container page-footer__container">
 
             <div class="page-footer__group">
-                <div>
+                <div data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                    data-aos-delay="100">
                     <!-- Логотип студії -->
                     <a class="logo link" href="./portfolio.html" lang="en" aria-label="Логотип сайту">Web<span
                             class="logo__white">Studio</span></a>
@@ -676,7 +704,8 @@
 
 
                 <!-- Соціальні мережі студії -->
-                <div class="social-networks page-footer__social-networks">
+                <div class="social-networks page-footer__social-networks" data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-delay="200">
                     <!-- Заголовок футера -->
                     <h3 class="page-footer__subtitle">приєднуйтесь</h3>
 
@@ -725,14 +754,15 @@
             </div>
 
             <!-- Форма підписки на розсилку -->
-            <form class="subscription page-footer__subscription">
+            <form class="subscription page-footer__subscription" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" data-aos-delay="200">
                 <!-- Заголовок футера -->
                 <h3 class="page-footer__subtitle" id="subscription-form">Підпишіться на розсилку</h3>
 
                 <div class="subscription__group" role="group" aria-labelledby="subscription-form">
 
                     <!-- Поле для введення email -->
-                    <input class="subscription__input" type="email" name="email" placeholder="E-mail">
+                    <input class="subscription__input" type="email" name="email" placeholder="E-mail" required>
 
                     <!-- Кнопка відправки форми -->
                     <button class="subscription__btn button" type="submit">
@@ -753,6 +783,10 @@
     <script src="./js/preloader.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/pulse-btn.js"></script>
+
+    <!-- Анімація -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animations.js"></script>
 </body>
 
 </html>
