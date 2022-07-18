@@ -35,7 +35,7 @@
 .button--animation {
     position: relative;
     z-index: 1;
-
+    
     overflow: hidden;
 
     // Блік
@@ -44,8 +44,10 @@
         position: absolute;
         top: 0;
         left: 0;
+
         width: 1.5em;
         height: 100%;
+
         background-color: rgba(255, 255, 255, 0.6);
         transform: translateX(-3em) skewX(-45deg);
         animation: move-light 3000ms infinite;
