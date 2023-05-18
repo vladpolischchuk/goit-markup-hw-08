@@ -1,26 +1,7 @@
-// Прибираю горизонтальний скролл
-@media screen and (min-width: 320px) {
-    html {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    .page-body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-}
-
 // Скидання деяких стилів
 .page-body {
     font-family: $main-font;
     color: getColor('primary');
-
-    &.modal-open {
-        overflow: hidden;
-    }
 }
 
 .list {
